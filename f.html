@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AsorA株式会社｜F ベント</title>
+<meta name="description" content="福岡県柳川市のAsorA株式会社。外構工事・造成工事・解体工事・伐採工事まで、土地のことを一社で請け負います。">
+<meta name="theme-color" content="#EEF1F5">
+<meta property="og:title" content="AsorA株式会社｜柳川の外構・造成・解体・伐採">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='60 8 475 410'%3E%3Cpath d='M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z' fill='%230483C7'/%3E%3Cpath d='M278.5 263H443L480 327.5H315L266.5 414H192Z' fill='%2328A7E0'/%3E%3Cpath d='M417 345.5H490L530.5 414H456Z' fill='%230483C7'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap">
+<style>
+:root{--bg:#EEF1F5;--card:#FFFFFF;--ink:#0F1720;--sub:#5B6673;--line:#E1E6ED;--blue:#0477B8;--sky:#28A7E0;--deep:#0B2A3D}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 15px/1.85 "Zen Kaku Gothic New","Hiragino Sans",sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+a{color:inherit}img{display:block;max-width:100%}
+.lat{font-family:"Plus Jakarta Sans","Helvetica Neue",Arial,sans-serif}
+.layout{display:grid;grid-template-columns:minmax(300px,380px) minmax(0,1fr);gap:16px;padding:16px;max-width:1600px;margin:0 auto}
+/* side */
+.side{position:sticky;top:16px;height:calc(100svh - 32px);background:var(--deep);color:#EAF3F9;border-radius:28px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;--mk1:#EAF3F9;--mk2:#28A7E0;--wd:#EAF3F9}
+.side::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(40,167,224,.35),transparent 70%);right:-160px;bottom:-160px;animation:glow 8s ease-in-out infinite}
+@keyframes glow{50%{transform:translate(-40px,-30px) scale(1.1)}}
+.side>*{position:relative;z-index:1}
+.side .mk{width:88px}.side .wd{width:170px;margin-top:14px}
+.side h1{margin:28px 0 12px;font:900 clamp(26px,2.4vw,34px)/1.45 "Zen Kaku Gothic New",sans-serif}
+.side p{margin:0;color:#B9CBD8;font-size:14px}
+.side nav{display:flex;flex-direction:column;gap:2px;margin:24px 0}
+.side nav a{display:flex;justify-content:space-between;text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(234,243,249,.14);font-weight:700;font-size:14px;transition:padding .3s,color .3s}
+.side nav a:hover{padding-left:8px;color:var(--sky)}
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;min-height:54px;border-radius:16px;background:var(--sky);color:var(--deep);text-decoration:none;font-weight:900;transition:transform .3s,background .3s}
+.cta:hover{transform:translateY(-2px);background:#fff}
+@media (max-width:980px){.layout{grid-template-columns:1fr}.side{position:relative;top:0;height:auto;gap:24px}}
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:minmax(120px,auto);gap:16px}
+.b{background:var(--card);border-radius:28px;padding:24px;position:relative;overflow:hidden}
+.b h2{margin:0 0 6px;font:800 13px/1 "Plus Jakarta Sans",sans-serif;letter-spacing:.18em;color:var(--sub);text-transform:uppercase}
+.hero{grid-column:span 6;min-height:min(70svh,640px);padding:0;color:#fff;display:flex;align-items:flex-end}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:z 12s ease-out both}
+@keyframes z{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,42,61,0) 40%,rgba(11,42,61,.8))}
+.hero .tx{position:relative;z-index:1;padding:clamp(24px,3vw,40px);display:flex;justify-content:space-between;align-items:flex-end;gap:20px;width:100%;flex-wrap:wrap}
+.hero .big{margin:0;font:800 clamp(44px,6vw,96px)/.95 "Plus Jakarta Sans",sans-serif;letter-spacing:-.04em}
+.hero .chip{background:rgba(255,255,255,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:999px;padding:10px 18px;font-weight:700;font-size:14px}
+.svc{grid-column:span 3;min-height:300px;padding:0;color:#fff;display:flex;align-items:flex-end;cursor:default}
+.svc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.svc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,23,32,.05) 20%,rgba(15,23,32,.82));transition:opacity .5s}
+.svc .tx{position:relative;z-index:1;padding:24px;width:100%}
+.svc .k{font:800 12px/1 "Plus Jakarta Sans",sans-serif;letter-spacing:.2em;color:var(--sky)}
+.svc h3{margin:8px 0 0;font:900 clamp(24px,2.4vw,32px)/1.3 "Zen Kaku Gothic New",sans-serif}
+.svc p{margin:0;max-height:0;opacity:0;overflow:hidden;transition:max-height .6s cubic-bezier(.2,.8,.2,1),opacity .5s,margin .5s;font-size:14px;color:#DCE5EC}
+.svc:hover img,.svc:focus-within img{transform:scale(1.08)}
+.svc:hover p,.svc:focus-within p{max-height:120px;opacity:1;margin-top:8px}
+@media (hover:none){.svc p{max-height:none;opacity:1;margin-top:8px}}
+.stat{grid-column:span 2;display:flex;flex-direction:column;justify-content:space-between;min-height:180px}
+.stat b{font:800 clamp(48px,5vw,72px)/1 "Plus Jakarta Sans",sans-serif;letter-spacing:-.04em;color:var(--blue)}
+.stat.dk{background:var(--blue);color:#fff}.stat.dk b{color:#fff}.stat.dk h2{color:#CFE6F4}
+/* process tabs */
+.proc{grid-column:span 4}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0 18px}
+.tabs button{border:0;border-radius:999px;padding:10px 16px;min-height:44px;background:var(--bg);font:700 14px/1 inherit;color:var(--ink);cursor:pointer;transition:background .3s,color .3s}
+.tabs button[aria-selected="true"]{background:var(--ink);color:#fff}
+.tabs button:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+.pane{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;min-height:120px}
+.pane .num{font:800 88px/1 "Plus Jakarta Sans",sans-serif;color:var(--line);-webkit-text-stroke:2px var(--blue)}
+.pane h3{margin:0;font-size:22px}
+.pane p{margin:4px 0 0;color:var(--sub)}
+.bar{height:4px;border-radius:4px;background:var(--bg);margin-top:18px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--sky);transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.map{grid-column:span 2;background:#DDE8F1;min-height:280px;display:flex;flex-direction:column;justify-content:flex-end}
+.map svg.bg{position:absolute;inset:0;width:100%;height:100%}
+.pin{position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);display:grid;place-items:center}
+.pin::before{content:"";position:absolute;width:64px;height:64px;border-radius:50%;background:rgba(4,119,184,.25);animation:ping 2s ease-out infinite}
+@keyframes ping{from{transform:scale(.4);opacity:1}to{transform:scale(1.6);opacity:0}}
+.pin .mk{width:40px;position:relative}
+.map .ad{position:relative;background:#fff;border-radius:16px;padding:14px 16px;font-size:13px;line-height:1.7}
+/* works filter */
+.works{grid-column:span 6}
+.flt{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 18px}
+.flt button{border:1px solid var(--line);border-radius:999px;padding:8px 16px;min-height:42px;background:#fff;font:700 13px/1 inherit;cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.flt button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.wg{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.wg figure{margin:0;border-radius:18px;overflow:hidden;position:relative;aspect-ratio:4/3;transition:opacity .4s,transform .4s}
+.wg figure.hide{display:none}
+.wg img{width:100%;height:100%;object-fit:cover}
+.wg figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.92);border-radius:999px;padding:4px 12px;font-size:12px;font-weight:700}
+.co{grid-column:span 3}
+.co dl{margin:12px 0 0;display:grid;grid-template-columns:6em 1fr;font-size:14px}
+.co dt,.co dd{margin:0;padding:10px 0;border-bottom:1px solid var(--line)}
+.co dt{color:var(--sub)}
+.ct{grid-column:span 3;background:var(--ink);color:#fff}
+.ct h2{color:#9FB0C0}
+.ct .t{font:800 clamp(28px,3vw,40px)/1.2 "Plus Jakarta Sans",sans-serif;margin:10px 0 18px;display:block;text-decoration:none}
+.ct label{display:block;font-size:13px;color:#C9D3DC;margin-bottom:4px}
+.ct input,.ct textarea{width:100%;font:inherit;color:var(--ink);background:#fff;border:0;border-radius:12px;padding:12px;min-height:46px;margin-bottom:10px}
+.ct button{width:100%;min-height:52px;border:0;border-radius:14px;background:var(--sky);color:var(--deep);font:900 15px/1 inherit;cursor:pointer}
+@media (max-width:1100px){.svc,.co,.ct{grid-column:span 6}.stat{grid-column:span 3}.proc,.map{grid-column:span 6}}
+@media (max-width:560px){.stat{grid-column:span 6}}
+.js [data-rv]{opacity:0;transform:translateY(30px) scale(.97);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.js [data-rv].in{opacity:1;transform:none}
+a:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js [data-rv]{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="side">
+    <div>
+      <a href="#top" aria-label="AsorA株式会社" style="display:block;text-decoration:none"><svg class="mk" viewBox="60 8 475 410" aria-hidden="true"><path d="M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z" style="fill:var(--mk1,#0483C7)"/><path d="M278.5 263H443L480 327.5H315L266.5 414H192Z" style="fill:var(--mk2,#28A7E0)"/><path d="M417 345.5H490L530.5 414H456Z" style="fill:var(--mk1,#0483C7)"/></svg><svg class="wd" viewBox="10 442 576 166" aria-hidden="true"><path fill-rule="evenodd" d="M46.1 584.0 L54.0 566.5 L85.3 566.8 L116.5 567.1 L123.4 583.3 C127.2 592.2 130.9 600.1 131.5 600.8 C132.3 601.7 135.8 602.0 144.3 601.8 L155.9 601.5 L144.9 577.0 C138.9 563.5 131.5 547.1 128.6 540.5 C125.6 533.9 119.3 519.7 114.5 509.0 C100.1 476.8 86.8 447.5 86.6 447.2 C86.4 447.1 80.7 458.8 74.0 473.2 C67.2 487.7 57.6 508.1 52.7 518.5 C47.8 529.0 42.0 541.3 39.8 546.0 C37.6 550.7 34.1 558.1 32.0 562.5 C29.9 566.9 26.3 574.5 24.0 579.5 C18.3 591.7 14.0 601.1 14.0 601.6 C14.0 601.9 19.4 601.9 26.1 601.8 L38.2 601.5 L46.1 584.0 Z M64.0 544.4 C64.0 542.5 85.4 497.1 86.0 497.7 C86.6 498.4 100.8 530.2 105.7 541.8 L107.0 545.0 L85.5 545.0 C73.7 545.0 64.0 544.7 64.0 544.4 Z M216.5 601.5 C227.8 596.5 234.0 587.7 234.8 575.2 C235.7 561.0 231.2 555.3 210.2 544.7 C196.0 537.4 193.3 535.0 194.9 530.7 C197.4 524.1 207.4 524.4 213.9 531.3 L216.2 533.9 L224.1 528.7 C228.4 525.8 232.0 523.1 232.0 522.5 C232.0 522.0 229.3 519.0 226.1 515.9 C221.5 511.3 218.9 509.7 214.4 508.4 C206.6 506.2 196.0 506.9 189.6 510.1 C177.9 515.9 171.6 529.8 175.1 542.3 C176.9 549.0 182.2 553.6 195.6 560.0 C203.3 563.7 208.7 567.0 210.4 569.0 C215.6 575.2 212.5 583.4 204.5 584.9 C197.2 586.2 191.8 583.3 188.5 576.4 L187.0 573.1 L178.7 577.1 C174.2 579.2 170.4 581.7 170.2 582.4 C169.4 586.2 178.7 597.8 185.3 601.2 C193.3 605.2 207.8 605.4 216.5 601.5 Z M320.2 602.0 C339.2 596.2 352.0 579.9 353.6 559.7 C354.7 545.6 349.7 531.0 340.5 521.6 C321.5 502.4 288.0 502.1 269.0 521.0 C246.3 543.6 252.3 584.5 280.4 598.7 C288.5 602.8 292.9 603.8 303.6 603.9 C311.2 604.0 315.5 603.5 320.2 602.0 Z M294.5 583.4 C288.4 581.3 283.5 576.6 280.3 570.2 C278.0 565.4 277.5 563.2 277.5 556.5 C277.5 545.6 279.8 539.4 285.9 533.7 C291.3 528.6 295.7 526.9 303.7 526.7 C311.7 526.5 316.9 528.3 322.2 533.0 C328.4 538.4 331.3 545.3 331.4 555.0 C331.5 565.0 329.0 572.0 323.5 577.6 C316.6 584.4 304.3 586.9 294.5 583.4 Z M403.2 572.2 C403.5 543.4 403.6 542.4 405.8 537.8 C409.1 531.2 413.0 528.7 420.6 528.2 C425.0 527.9 427.6 528.3 429.9 529.5 C431.7 530.4 433.3 531.0 433.4 530.8 C435.2 528.0 441.8 511.5 441.4 510.9 C440.4 509.3 430.6 507.0 424.6 507.0 C417.5 507.0 411.1 509.6 406.2 514.3 L403.0 517.4 L403.0 513.2 L403.0 509.0 L392.5 509.0 L382.0 509.0 L381.8 555.1 C381.6 580.4 381.7 601.4 381.9 601.6 C382.1 601.8 387.0 602.0 392.6 602.0 L402.9 602.0 L403.2 572.2 Z M471.7 584.2 L479.8 566.5 L510.0 566.2 C528.7 566.1 540.7 566.3 541.4 567.0 C542.1 567.5 545.9 575.6 550.0 585.0 L557.3 602.0 L569.2 602.0 C575.7 602.0 581.0 601.6 581.0 601.1 C581.0 600.6 576.0 589.0 569.9 575.3 C563.8 561.7 550.9 533.0 541.3 511.5 C531.7 490.1 521.3 466.8 518.2 459.7 C515.2 452.7 512.3 447.3 512.0 447.7 C511.6 448.2 504.8 462.2 497.0 479.0 C489.1 495.8 480.7 513.8 478.3 519.0 C475.8 524.2 470.3 535.9 466.0 545.0 C449.0 580.9 440.0 600.4 440.0 601.2 C440.0 601.6 445.3 602.0 451.8 602.0 L463.6 602.0 L471.7 584.2 Z M489.9 543.2 C490.4 542.3 495.1 531.8 500.5 520.0 C505.8 508.2 510.5 498.2 510.9 497.7 C511.3 497.3 516.4 507.8 522.2 521.0 L532.8 545.0 L510.8 545.0 C490.3 545.0 489.0 544.9 489.9 543.2 Z" style="fill:var(--wd,#0483C7)"/></svg></a>
+      <h1>外構・造成・解体・伐採。<br>土地のことは、まとめて。</h1>
+      <p>福岡県柳川市のAsorA株式会社。伐採から仕上げの外構まで、ひとつの窓口で進めます。</p>
+      <nav aria-label="メインメニュー"><a href="#services">事業内容<span>→</span></a><a href="#process">工事の流れ<span>→</span></a><a href="#works">施工事例<span>→</span></a><a href="#company">会社概要<span>→</span></a></nav>
+    </div>
+    <a class="cta" href="#contact">相談する</a>
+  </aside>
+
+  <main class="bento" id="top">
+    <section class="b hero" aria-label="メインビジュアル"><img src="https://images.unsplash.com/photo-1762810981576-1b07f76af9d2?auto=format&fit=crop&w=2000&q=70" alt="モダンな住宅の外構（サンプル写真）"><div class="tx"><p class="big">Ground<br>to Life.</p><span class="chip">Yanagawa, Fukuoka</span></div></section>
+
+    <article class="b svc" id="services" data-rv tabindex="0"><img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=1200&q=70" alt="住宅の外構（サンプル写真）" loading="lazy"><div class="tx"><span class="k">01 — EXTERIOR</span><h3>外構工事</h3><p>門まわり、アプローチ、カーポート、フェンス、土間コンクリートまで。</p></div></article>
+    <article class="b svc" data-rv tabindex="0"><img src="https://images.unsplash.com/photo-1768085091650-e8e89ef57b76?auto=format&fit=crop&w=1200&q=70" alt="造成現場の重機（サンプル写真）" loading="lazy"><div class="tx"><span class="k">02 — LAND</span><h3>造成工事</h3><p>整地、盛土・切土、擁壁。平らで丈夫な土地をつくります。</p></div></article>
+    <article class="b svc" data-rv tabindex="0"><img src="https://images.unsplash.com/photo-1751989708565-c7aef1165e28?auto=format&fit=crop&w=1200&q=70" alt="解体現場（サンプル写真）" loading="lazy"><div class="tx"><span class="k">03 — DEMOLITION</span><h3>解体工事</h3><p>木造家屋、倉庫、ブロック塀。養生と分別を徹底して更地へ。</p></div></article>
+    <article class="b svc" data-rv tabindex="0"><img src="https://images.unsplash.com/photo-1684332666088-f35b252b5aca?auto=format&fit=crop&w=1200&q=70" alt="伐採作業（サンプル写真）" loading="lazy"><div class="tx"><span class="k">04 — TREES</span><h3>伐採工事</h3><p>伐採、抜根、剪定。周囲に配慮して安全に作業します。</p></div></article>
+
+    <div class="b stat" data-rv><h2>Services</h2><b>4</b><span>外構・造成・解体・伐採</span></div>
+    <div class="b stat dk" data-rv><h2>Window</h2><b>1</b><span>ご相談の窓口はひとつ</span></div>
+    <div class="b stat" data-rv><h2>Base</h2><b>柳川</b><span>福岡県柳川市三橋町</span></div>
+
+    <section class="b proc" id="process" data-rv>
+      <h2>Process</h2>
+      <div class="tabs" role="tablist" aria-label="工事の流れ">
+        <button role="tab" aria-selected="true">相談</button><button role="tab" aria-selected="false">現地調査</button><button role="tab" aria-selected="false">お見積り</button><button role="tab" aria-selected="false">施工</button><button role="tab" aria-selected="false">お引き渡し</button>
+      </div>
+      <div class="pane" role="tabpanel" aria-live="polite"><span class="num" id="pn">01</span><div><h3 id="pt">お問い合わせ</h3><p id="pd">お電話・メールで、まずはお気軽にご相談ください。</p></div></div>
+      <div class="bar"><i id="pb" style="width:20%"></i></div>
+    </section>
+    <section class="b map" id="company-map" data-rv aria-label="所在地">
+      <svg class="bg" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M0 90C80 80 140 120 220 104s60-30 80-26M0 210c60-12 120 30 200 10s70-40 100-34" fill="none" stroke="#BCD0E0" stroke-width="10"/><path d="M110 0v300M210 0c-10 100 10 200 0 300" fill="none" stroke="#C9DAE7" stroke-width="4"/></svg>
+      <div class="pin"><svg class="mk" viewBox="60 8 475 410" aria-hidden="true"><path d="M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z" style="fill:var(--mk1,#0483C7)"/><path d="M278.5 263H443L480 327.5H315L266.5 414H192Z" style="fill:var(--mk2,#28A7E0)"/><path d="M417 345.5H490L530.5 414H456Z" style="fill:var(--mk1,#0483C7)"/></svg></div>
+      <div class="ad"><strong>AsorA株式会社</strong><br>〒832-0815 福岡県柳川市三橋町白鳥147番地2</div>
+    </section>
+
+    <section class="b works" id="works" data-rv>
+      <h2>Works</h2>
+      <div class="flt" role="group" aria-label="施工事例を絞り込む"><button aria-pressed="true" data-f="all">すべて</button><button aria-pressed="false" data-f="ext">外構</button><button aria-pressed="false" data-f="grd">造成</button><button aria-pressed="false" data-f="dem">解体</button><button aria-pressed="false" data-f="tre">伐採</button></div>
+      <div class="wg">
+        <figure data-c="ext"><img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=700&q=70" alt="外構の施工例（サンプル写真）" loading="lazy"><figcaption>外構｜[施工地域]</figcaption></figure>
+        <figure data-c="grd"><img src="https://images.unsplash.com/photo-1764422743505-97c9ea0e43f2?auto=format&fit=crop&w=700&q=70" alt="造成の施工例（サンプル写真）" loading="lazy"><figcaption>造成｜[施工地域]</figcaption></figure>
+        <figure data-c="dem"><img src="https://images.unsplash.com/photo-1580901369227-308f6f40bdeb?auto=format&fit=crop&w=700&q=70" alt="解体の施工例（サンプル写真）" loading="lazy"><figcaption>解体｜[施工地域]</figcaption></figure>
+        <figure data-c="tre"><img src="https://images.unsplash.com/photo-1754321902809-5c21cbc67228?auto=format&fit=crop&w=700&q=70" alt="伐採の施工例（サンプル写真）" loading="lazy"><figcaption>伐採｜[施工地域]</figcaption></figure>
+        <figure data-c="ext"><img src="https://images.unsplash.com/photo-1781797221329-c3d083ab6d99?auto=format&fit=crop&w=700&q=70" alt="外構の施工例（サンプル写真）" loading="lazy"><figcaption>外構｜[施工地域]</figcaption></figure>
+        <figure data-c="grd"><img src="https://images.unsplash.com/photo-1652303713917-2666b8bee507?auto=format&fit=crop&w=700&q=70" alt="造成の施工例（サンプル写真）" loading="lazy"><figcaption>造成｜[施工地域]</figcaption></figure>
+        <figure data-c="tre"><img src="https://images.unsplash.com/photo-1574359173269-291f060e6fe1?auto=format&fit=crop&w=700&q=70" alt="伐採の施工例（サンプル写真）" loading="lazy"><figcaption>伐採｜[施工地域]</figcaption></figure>
+        <figure data-c="grd"><img src="https://images.unsplash.com/photo-1649807533255-bbc9c9fb7d77?auto=format&fit=crop&w=700&q=70" alt="造成の施工例（サンプル写真）" loading="lazy"><figcaption>造成｜[施工地域]</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="b co" id="company" data-rv>
+      <h2>Company</h2>
+      <dl><dt>会社名</dt><dd>AsorA株式会社（アソラ）</dd><dt>所在地</dt><dd>〒832-0815 福岡県柳川市三橋町白鳥147番地2</dd><dt>代表者</dt><dd>代表取締役　[代表者名]</dd><dt>TEL</dt><dd>[電話番号]</dd><dt>事業内容</dt><dd>外構工事／造成工事／解体工事／伐採工事</dd></dl>
+    </section>
+    <section class="b ct" id="contact" data-rv>
+      <h2>Contact</h2>
+      <a class="t lat" href="tel:">[電話番号]</a>
+      <label for="f-n">お名前</label><input id="f-n" autocomplete="name">
+      <label for="f-m">ご相談内容</label><textarea id="f-m" rows="3"></textarea>
+      <button type="button">送信する</button>
+    </section>
+  </main>
+</div>
+<script>
+(function(){
+  var D=[['01','お問い合わせ','お電話・メールで、まずはお気軽にご相談ください。'],['02','現地調査','敷地や建物、木の状態を確認し、ご要望を伺います。'],['03','プラン・お見積り','工事内容と費用を、分かりやすくご説明します。'],['04','施工','ご近所への配慮を徹底し、安全第一で工事します。'],['05','お引き渡し','完成後も、気になることがあればご相談ください。']];
+  var tb=[].slice.call(document.querySelectorAll('.tabs button'));
+  function set(i){tb.forEach(function(b,k){b.setAttribute('aria-selected',k===i?'true':'false')});document.getElementById('pn').textContent=D[i][0];document.getElementById('pt').textContent=D[i][1];document.getElementById('pd').textContent=D[i][2];document.getElementById('pb').style.width=((i+1)*20)+'%'}
+  tb.forEach(function(b,i){b.addEventListener('click',function(){set(i)})});
+  var fb=[].slice.call(document.querySelectorAll('.flt button')),fg=[].slice.call(document.querySelectorAll('.wg figure'));
+  fb.forEach(function(b){b.addEventListener('click',function(){var f=b.getAttribute('data-f');fb.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});fg.forEach(function(g){g.classList.toggle('hide',f!=='all'&&g.getAttribute('data-c')!==f)})})});
+})();
+</script>
+<script>
+(function(){var els=document.querySelectorAll('[data-rv]');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px',threshold:0.12});
+els.forEach(function(e){io.observe(e)})})();
+</script>
+<script src="assets/switch.js" defer></script>
+</body>
+</html>

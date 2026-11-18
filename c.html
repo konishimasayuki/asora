@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AsorA株式会社｜C シネマ</title>
+<meta name="description" content="福岡県柳川市のAsorA株式会社。外構工事・造成工事・解体工事・伐採工事まで、土地のことを一社で請け負います。">
+<meta name="theme-color" content="#0B0D0F">
+<meta property="og:title" content="AsorA株式会社｜柳川の外構・造成・解体・伐採">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='60 8 475 410'%3E%3Cpath d='M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z' fill='%230483C7'/%3E%3Cpath d='M278.5 263H443L480 327.5H315L266.5 414H192Z' fill='%2328A7E0'/%3E%3Cpath d='M417 345.5H490L530.5 414H456Z' fill='%230483C7'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#0B0D0F;--fg:#EDEFF2;--mute:#9AA3AD;--sky:#28A7E0;--line:rgba(237,239,242,.16)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.9 "Zen Kaku Gothic New","Hiragino Sans",sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:80px}
+a{color:inherit}img{display:block;max-width:100%}
+.lat{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+.hd{position:fixed;inset:0 0 auto;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:calc(18px + env(safe-area-inset-top,0px)) clamp(20px,4vw,48px) 18px;mix-blend-mode:normal}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;--mk1:#fff;--mk2:#28A7E0;--wd:#fff}
+.brand .mk{width:36px}.brand .wd{width:80px}
+.hd nav{display:flex;gap:26px;font:500 12px/1 Archivo,sans-serif;letter-spacing:.2em}
+.hd nav a{text-decoration:none;padding:10px 0;opacity:.8;transition:opacity .3s}.hd nav a:hover{opacity:1}
+@media (max-width:760px){.hd nav{display:none}}
+/* hero slideshow */
+.hero{position:relative;height:100svh;min-height:600px;overflow:hidden}
+.sl{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease}
+.sl.on{opacity:1}
+.sl img{width:100%;height:100%;object-fit:cover;transform:scale(1.18);transition:transform 9s linear}
+.sl.on img{transform:scale(1.02)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,13,15,.55) 0%,rgba(11,13,15,.15) 40%,rgba(11,13,15,.85) 100%)}
+.hero-t{position:absolute;z-index:2;left:clamp(20px,4vw,48px);right:clamp(20px,4vw,48px);bottom:clamp(90px,12vh,140px)}
+.hero-t .k{margin:0 0 14px;font:500 12px/1 Archivo,sans-serif;letter-spacing:.3em;color:var(--sky)}
+.hero-t h1{margin:0;font:900 clamp(56px,11vw,180px)/.86 Archivo,sans-serif;letter-spacing:-.04em;text-transform:uppercase}
+.hero-t h1 span{display:block;overflow:hidden}
+.hero-t h1 span i{display:block;font-style:normal;animation:up 1.2s cubic-bezier(.2,.8,.2,1) both}
+.hero-t h1 span:nth-child(2) i{animation-delay:.15s;color:transparent;-webkit-text-stroke:2px var(--fg)}
+@keyframes up{from{transform:translateY(105%)}to{transform:none}}
+.hero-t .jp{margin:22px 0 0;font-size:clamp(16px,1.6vw,20px);font-weight:500;max-width:30em}
+.ctl{position:absolute;z-index:3;right:clamp(20px,4vw,48px);bottom:clamp(90px,12vh,140px);display:flex;flex-direction:column;align-items:flex-end;gap:12px;font:500 12px/1 Archivo,sans-serif;letter-spacing:.2em}
+.ctl .cnt{font-size:14px}.ctl .cnt b{font-size:28px;font-weight:700}
+.bars{display:flex;gap:6px}
+.bars button{width:42px;height:22px;padding:0;border:0;background:none;cursor:pointer;position:relative}
+.bars button::before{content:"";position:absolute;left:0;right:0;top:10px;height:2px;background:var(--line)}
+.bars button i{position:absolute;left:0;top:10px;height:2px;width:0;background:var(--fg)}
+.bars button.on i{animation:fill 6s linear forwards}
+@keyframes fill{to{width:100%}}
+.ctl .lab{color:var(--mute)}
+@media (max-width:760px){.ctl{left:clamp(20px,4vw,48px);right:auto;bottom:40px;align-items:flex-start}.hero-t{bottom:120px}}
+/* statement */
+.st{padding:clamp(110px,14vw,220px) clamp(20px,4vw,48px);max-width:1280px;margin:0 auto}
+.st p{margin:0;font-weight:700;font-size:clamp(30px,4.6vw,68px);line-height:1.45}
+.st p span{color:rgba(237,239,242,.18);transition:color .6s ease}
+.st p span.lit{color:var(--fg)}
+.st p span.lit.b{color:var(--sky)}
+/* horizontal services */
+.hs-h{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding:0 clamp(20px,4vw,48px) 28px;max-width:none}
+.hs-h h2{margin:0;font:900 clamp(48px,8vw,128px)/.86 Archivo,sans-serif;letter-spacing:-.04em;text-transform:uppercase}
+.arrows{display:flex;gap:10px}
+.arrows button{width:56px;height:56px;border-radius:50%;border:1px solid var(--line);background:none;color:var(--fg);cursor:pointer;font-size:20px;transition:background .3s,color .3s}
+.arrows button:hover{background:var(--fg);color:var(--bg)}
+.hs{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 clamp(20px,4vw,48px) 24px;scrollbar-width:none}
+.hs::-webkit-scrollbar{display:none}
+.card{flex:0 0 min(78vw,920px);height:min(78vh,680px);min-height:460px;position:relative;scroll-snap-align:start;overflow:hidden;border-radius:4px}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.6s cubic-bezier(.2,.8,.2,1)}
+.card:hover img{transform:scale(1.06)}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,13,15,0) 30%,rgba(11,13,15,.88) 100%)}
+.card .ct{position:absolute;z-index:2;left:clamp(20px,3vw,40px);right:clamp(20px,3vw,40px);bottom:clamp(20px,3vw,40px);display:grid;grid-template-columns:auto 1fr;gap:6px 24px;align-items:end}
+.card .n{grid-row:1/3;font:900 clamp(80px,10vw,150px)/.8 Archivo,sans-serif;color:transparent;-webkit-text-stroke:1.5px var(--fg)}
+.card h3{margin:0;font-size:clamp(26px,2.8vw,40px);line-height:1.2}
+.card h3 small{display:block;font:500 12px/1 Archivo,sans-serif;letter-spacing:.24em;color:var(--sky);margin-bottom:10px}
+.card p{margin:0;color:#D0D5DB;max-width:34em;font-size:15px}
+@media (max-width:640px){.card .ct{grid-template-columns:1fr}.card .n{grid-row:auto;font-size:72px}}
+/* stripes */
+.duo{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:clamp(80px,10vw,140px)}
+.duo div{padding:clamp(28px,4vw,48px) clamp(20px,3vw,36px);border-right:1px solid var(--line)}
+.duo div:last-child{border-right:0}
+.duo b{display:block;font:700 clamp(28px,3vw,40px)/1.1 Archivo,sans-serif;margin-bottom:10px}
+.duo span{color:var(--mute);font-size:14px}
+@media (max-width:760px){.duo{grid-template-columns:1fr 1fr}.duo div:nth-child(2){border-right:0}.duo div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+/* cta */
+.cta{position:relative;overflow:hidden;padding:clamp(120px,16vw,240px) clamp(20px,4vw,48px);text-align:center}
+.cta img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.32}
+.cta>*:not(img){position:relative}
+.cta h2{margin:0;font:900 clamp(56px,12vw,200px)/.85 Archivo,sans-serif;letter-spacing:-.05em}
+.cta p{margin:28px auto 36px;max-width:30em}
+.cta a.tel{display:inline-flex;align-items:center;gap:14px;min-height:60px;padding:0 36px;border-radius:999px;background:var(--fg);color:var(--bg);text-decoration:none;font-weight:700;letter-spacing:.08em;transition:background .3s,transform .3s}
+.cta a.tel:hover{background:var(--sky);transform:translateY(-3px)}
+.co{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;padding:clamp(64px,8vw,110px) clamp(20px,4vw,48px);max-width:1280px;margin:0 auto}
+.co dl{margin:0;display:grid;grid-template-columns:7em 1fr}
+.co dt,.co dd{margin:0;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.co dt{color:var(--mute)}
+.co .big{--mk1:#EDEFF2;--mk2:#28A7E0;--wd:#EDEFF2;display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.co .big .mk{width:140px}.co .big .wd{width:240px}
+@media (max-width:760px){.co{grid-template-columns:1fr}}
+.ft{padding:28px clamp(20px,4vw,48px);border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font:500 12px/1 Archivo,sans-serif;letter-spacing:.16em;color:var(--mute)}
+.js [data-rv]{opacity:0;transform:translateY(50px);transition:opacity 1.2s cubic-bezier(.2,.8,.2,1),transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.js [data-rv].in{opacity:1;transform:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js [data-rv]{opacity:1;transform:none}.st p span{color:var(--fg)}}
+</style>
+</head>
+<body>
+<header class="hd">
+  <a class="brand" href="#top" aria-label="AsorA株式会社"><svg class="mk" viewBox="60 8 475 410" aria-hidden="true"><path d="M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z" style="fill:var(--mk1,#0483C7)"/><path d="M278.5 263H443L480 327.5H315L266.5 414H192Z" style="fill:var(--mk2,#28A7E0)"/><path d="M417 345.5H490L530.5 414H456Z" style="fill:var(--mk1,#0483C7)"/></svg><svg class="wd" viewBox="10 442 576 166" aria-hidden="true"><path fill-rule="evenodd" d="M46.1 584.0 L54.0 566.5 L85.3 566.8 L116.5 567.1 L123.4 583.3 C127.2 592.2 130.9 600.1 131.5 600.8 C132.3 601.7 135.8 602.0 144.3 601.8 L155.9 601.5 L144.9 577.0 C138.9 563.5 131.5 547.1 128.6 540.5 C125.6 533.9 119.3 519.7 114.5 509.0 C100.1 476.8 86.8 447.5 86.6 447.2 C86.4 447.1 80.7 458.8 74.0 473.2 C67.2 487.7 57.6 508.1 52.7 518.5 C47.8 529.0 42.0 541.3 39.8 546.0 C37.6 550.7 34.1 558.1 32.0 562.5 C29.9 566.9 26.3 574.5 24.0 579.5 C18.3 591.7 14.0 601.1 14.0 601.6 C14.0 601.9 19.4 601.9 26.1 601.8 L38.2 601.5 L46.1 584.0 Z M64.0 544.4 C64.0 542.5 85.4 497.1 86.0 497.7 C86.6 498.4 100.8 530.2 105.7 541.8 L107.0 545.0 L85.5 545.0 C73.7 545.0 64.0 544.7 64.0 544.4 Z M216.5 601.5 C227.8 596.5 234.0 587.7 234.8 575.2 C235.7 561.0 231.2 555.3 210.2 544.7 C196.0 537.4 193.3 535.0 194.9 530.7 C197.4 524.1 207.4 524.4 213.9 531.3 L216.2 533.9 L224.1 528.7 C228.4 525.8 232.0 523.1 232.0 522.5 C232.0 522.0 229.3 519.0 226.1 515.9 C221.5 511.3 218.9 509.7 214.4 508.4 C206.6 506.2 196.0 506.9 189.6 510.1 C177.9 515.9 171.6 529.8 175.1 542.3 C176.9 549.0 182.2 553.6 195.6 560.0 C203.3 563.7 208.7 567.0 210.4 569.0 C215.6 575.2 212.5 583.4 204.5 584.9 C197.2 586.2 191.8 583.3 188.5 576.4 L187.0 573.1 L178.7 577.1 C174.2 579.2 170.4 581.7 170.2 582.4 C169.4 586.2 178.7 597.8 185.3 601.2 C193.3 605.2 207.8 605.4 216.5 601.5 Z M320.2 602.0 C339.2 596.2 352.0 579.9 353.6 559.7 C354.7 545.6 349.7 531.0 340.5 521.6 C321.5 502.4 288.0 502.1 269.0 521.0 C246.3 543.6 252.3 584.5 280.4 598.7 C288.5 602.8 292.9 603.8 303.6 603.9 C311.2 604.0 315.5 603.5 320.2 602.0 Z M294.5 583.4 C288.4 581.3 283.5 576.6 280.3 570.2 C278.0 565.4 277.5 563.2 277.5 556.5 C277.5 545.6 279.8 539.4 285.9 533.7 C291.3 528.6 295.7 526.9 303.7 526.7 C311.7 526.5 316.9 528.3 322.2 533.0 C328.4 538.4 331.3 545.3 331.4 555.0 C331.5 565.0 329.0 572.0 323.5 577.6 C316.6 584.4 304.3 586.9 294.5 583.4 Z M403.2 572.2 C403.5 543.4 403.6 542.4 405.8 537.8 C409.1 531.2 413.0 528.7 420.6 528.2 C425.0 527.9 427.6 528.3 429.9 529.5 C431.7 530.4 433.3 531.0 433.4 530.8 C435.2 528.0 441.8 511.5 441.4 510.9 C440.4 509.3 430.6 507.0 424.6 507.0 C417.5 507.0 411.1 509.6 406.2 514.3 L403.0 517.4 L403.0 513.2 L403.0 509.0 L392.5 509.0 L382.0 509.0 L381.8 555.1 C381.6 580.4 381.7 601.4 381.9 601.6 C382.1 601.8 387.0 602.0 392.6 602.0 L402.9 602.0 L403.2 572.2 Z M471.7 584.2 L479.8 566.5 L510.0 566.2 C528.7 566.1 540.7 566.3 541.4 567.0 C542.1 567.5 545.9 575.6 550.0 585.0 L557.3 602.0 L569.2 602.0 C575.7 602.0 581.0 601.6 581.0 601.1 C581.0 600.6 576.0 589.0 569.9 575.3 C563.8 561.7 550.9 533.0 541.3 511.5 C531.7 490.1 521.3 466.8 518.2 459.7 C515.2 452.7 512.3 447.3 512.0 447.7 C511.6 448.2 504.8 462.2 497.0 479.0 C489.1 495.8 480.7 513.8 478.3 519.0 C475.8 524.2 470.3 535.9 466.0 545.0 C449.0 580.9 440.0 600.4 440.0 601.2 C440.0 601.6 445.3 602.0 451.8 602.0 L463.6 602.0 L471.7 584.2 Z M489.9 543.2 C490.4 542.3 495.1 531.8 500.5 520.0 C505.8 508.2 510.5 498.2 510.9 497.7 C511.3 497.3 516.4 507.8 522.2 521.0 L532.8 545.0 L510.8 545.0 C490.3 545.0 489.0 544.9 489.9 543.2 Z" style="fill:var(--wd,#0483C7)"/></svg></a>
+  <nav aria-label="メインメニュー"><a href="#services">SERVICES</a><a href="#company">COMPANY</a><a href="#contact">CONTACT</a></nav>
+</header>
+
+<section class="hero" id="top" aria-label="メインビジュアル">
+  <div class="sl on"><img src="https://images.unsplash.com/photo-1762810981576-1b07f76af9d2?auto=format&fit=crop&w=2200&q=70" alt="モダンな住宅の外構（サンプル写真）"></div>
+  <div class="sl"><img src="https://images.unsplash.com/photo-1768085091650-e8e89ef57b76?auto=format&fit=crop&w=2200&q=70" alt="青空の下の重機（サンプル写真）"></div>
+  <div class="sl"><img src="https://images.unsplash.com/photo-1751989708565-c7aef1165e28?auto=format&fit=crop&w=2200&q=70" alt="解体中の建物（サンプル写真）"></div>
+  <div class="sl"><img src="https://images.unsplash.com/photo-1754321902809-5c21cbc67228?auto=format&fit=crop&w=2200&q=70" alt="木を剪定する作業員（サンプル写真）"></div>
+  <div class="hero-t">
+    <p class="k">YANAGAWA, FUKUOKA — EXTERIOR / LAND / DEMOLITION / TREES</p>
+    <h1><span><i>Shape</i></span><span><i>the ground.</i></span></h1>
+    <p class="jp">外構・造成・解体・伐採。土地のことを、ひとつの窓口で。</p>
+  </div>
+  <div class="ctl">
+    <span class="cnt"><b id="cn">01</b> / 04</span>
+    <div class="bars" role="group" aria-label="スライドを選ぶ"><button class="on" aria-label="スライド1：外構"><i></i></button><button aria-label="スライド2：造成"><i></i></button><button aria-label="スライド3：解体"><i></i></button><button aria-label="スライド4：伐採"><i></i></button></div>
+    <span class="lab" id="lb">EXTERIOR</span>
+  </div>
+</section>
+
+<section class="st" aria-label="私たちについて">
+  <p id="stx">木を伐る。建物を解く。土地を造る。そして、外構で暮らしの風景に仕上げる。柳川のAsorAは、その全部をひとつのチームで。</p>
+</section>
+
+<section id="services">
+  <div class="hs-h"><h2 data-rv>Services</h2><div class="arrows"><button type="button" id="pv" aria-label="前へ">←</button><button type="button" id="nx" aria-label="次へ">→</button></div></div>
+  <div class="hs" id="hs" tabindex="0" aria-label="事業内容（横にスクロール）">
+    <article class="card"><img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1800&q=70" alt="住宅の外構（サンプル写真）" loading="lazy"><div class="ct"><span class="n">01</span><h3><small>EXTERIOR</small>外構工事</h3><p>門まわり、アプローチ、カーポート、フェンス、土間コンクリート。住まいの顔になる外まわりを仕上げます。</p></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1764422743505-97c9ea0e43f2?auto=format&fit=crop&w=1800&q=70" alt="造成現場の重機（サンプル写真）" loading="lazy"><div class="ct"><span class="n">02</span><h3><small>LAND DEVELOPMENT</small>造成工事</h3><p>整地、盛土・切土、擁壁。建物や駐車場のための、平らで丈夫な土地をつくります。</p></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1580901369227-308f6f40bdeb?auto=format&fit=crop&w=1800&q=70" alt="解体現場の重機（サンプル写真）" loading="lazy"><div class="ct"><span class="n">03</span><h3><small>DEMOLITION</small>解体工事</h3><p>木造家屋、倉庫、ブロック塀、古い外構。養生と分別を徹底し、更地へ戻します。</p></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1684332666088-f35b252b5aca?auto=format&fit=crop&w=1800&q=70" alt="木を伐採する作業員（サンプル写真）" loading="lazy"><div class="ct"><span class="n">04</span><h3><small>TREE FELLING</small>伐採工事</h3><p>庭木や大木の伐採、抜根、剪定。周囲に配慮しながら安全に作業します。</p></div></article>
+  </div>
+</section>
+
+<div class="duo">
+  <div data-rv><b>4</b><span>外構・造成・解体・伐採</span></div>
+  <div data-rv><b>1</b><span>ご相談の窓口はひとつ</span></div>
+  <div data-rv><b>柳川</b><span>福岡県柳川市三橋町</span></div>
+  <div data-rv><b>→ GL</b><span>土地のはじまりから</span></div>
+</div>
+
+<section class="co" id="company">
+  <div class="big" data-rv><svg class="mk" viewBox="60 8 475 410" aria-hidden="true"><path d="M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z" style="fill:var(--mk1,#0483C7)"/><path d="M278.5 263H443L480 327.5H315L266.5 414H192Z" style="fill:var(--mk2,#28A7E0)"/><path d="M417 345.5H490L530.5 414H456Z" style="fill:var(--mk1,#0483C7)"/></svg><svg class="wd" viewBox="10 442 576 166" aria-hidden="true"><path fill-rule="evenodd" d="M46.1 584.0 L54.0 566.5 L85.3 566.8 L116.5 567.1 L123.4 583.3 C127.2 592.2 130.9 600.1 131.5 600.8 C132.3 601.7 135.8 602.0 144.3 601.8 L155.9 601.5 L144.9 577.0 C138.9 563.5 131.5 547.1 128.6 540.5 C125.6 533.9 119.3 519.7 114.5 509.0 C100.1 476.8 86.8 447.5 86.6 447.2 C86.4 447.1 80.7 458.8 74.0 473.2 C67.2 487.7 57.6 508.1 52.7 518.5 C47.8 529.0 42.0 541.3 39.8 546.0 C37.6 550.7 34.1 558.1 32.0 562.5 C29.9 566.9 26.3 574.5 24.0 579.5 C18.3 591.7 14.0 601.1 14.0 601.6 C14.0 601.9 19.4 601.9 26.1 601.8 L38.2 601.5 L46.1 584.0 Z M64.0 544.4 C64.0 542.5 85.4 497.1 86.0 497.7 C86.6 498.4 100.8 530.2 105.7 541.8 L107.0 545.0 L85.5 545.0 C73.7 545.0 64.0 544.7 64.0 544.4 Z M216.5 601.5 C227.8 596.5 234.0 587.7 234.8 575.2 C235.7 561.0 231.2 555.3 210.2 544.7 C196.0 537.4 193.3 535.0 194.9 530.7 C197.4 524.1 207.4 524.4 213.9 531.3 L216.2 533.9 L224.1 528.7 C228.4 525.8 232.0 523.1 232.0 522.5 C232.0 522.0 229.3 519.0 226.1 515.9 C221.5 511.3 218.9 509.7 214.4 508.4 C206.6 506.2 196.0 506.9 189.6 510.1 C177.9 515.9 171.6 529.8 175.1 542.3 C176.9 549.0 182.2 553.6 195.6 560.0 C203.3 563.7 208.7 567.0 210.4 569.0 C215.6 575.2 212.5 583.4 204.5 584.9 C197.2 586.2 191.8 583.3 188.5 576.4 L187.0 573.1 L178.7 577.1 C174.2 579.2 170.4 581.7 170.2 582.4 C169.4 586.2 178.7 597.8 185.3 601.2 C193.3 605.2 207.8 605.4 216.5 601.5 Z M320.2 602.0 C339.2 596.2 352.0 579.9 353.6 559.7 C354.7 545.6 349.7 531.0 340.5 521.6 C321.5 502.4 288.0 502.1 269.0 521.0 C246.3 543.6 252.3 584.5 280.4 598.7 C288.5 602.8 292.9 603.8 303.6 603.9 C311.2 604.0 315.5 603.5 320.2 602.0 Z M294.5 583.4 C288.4 581.3 283.5 576.6 280.3 570.2 C278.0 565.4 277.5 563.2 277.5 556.5 C277.5 545.6 279.8 539.4 285.9 533.7 C291.3 528.6 295.7 526.9 303.7 526.7 C311.7 526.5 316.9 528.3 322.2 533.0 C328.4 538.4 331.3 545.3 331.4 555.0 C331.5 565.0 329.0 572.0 323.5 577.6 C316.6 584.4 304.3 586.9 294.5 583.4 Z M403.2 572.2 C403.5 543.4 403.6 542.4 405.8 537.8 C409.1 531.2 413.0 528.7 420.6 528.2 C425.0 527.9 427.6 528.3 429.9 529.5 C431.7 530.4 433.3 531.0 433.4 530.8 C435.2 528.0 441.8 511.5 441.4 510.9 C440.4 509.3 430.6 507.0 424.6 507.0 C417.5 507.0 411.1 509.6 406.2 514.3 L403.0 517.4 L403.0 513.2 L403.0 509.0 L392.5 509.0 L382.0 509.0 L381.8 555.1 C381.6 580.4 381.7 601.4 381.9 601.6 C382.1 601.8 387.0 602.0 392.6 602.0 L402.9 602.0 L403.2 572.2 Z M471.7 584.2 L479.8 566.5 L510.0 566.2 C528.7 566.1 540.7 566.3 541.4 567.0 C542.1 567.5 545.9 575.6 550.0 585.0 L557.3 602.0 L569.2 602.0 C575.7 602.0 581.0 601.6 581.0 601.1 C581.0 600.6 576.0 589.0 569.9 575.3 C563.8 561.7 550.9 533.0 541.3 511.5 C531.7 490.1 521.3 466.8 518.2 459.7 C515.2 452.7 512.3 447.3 512.0 447.7 C511.6 448.2 504.8 462.2 497.0 479.0 C489.1 495.8 480.7 513.8 478.3 519.0 C475.8 524.2 470.3 535.9 466.0 545.0 C449.0 580.9 440.0 600.4 440.0 601.2 C440.0 601.6 445.3 602.0 451.8 602.0 L463.6 602.0 L471.7 584.2 Z M489.9 543.2 C490.4 542.3 495.1 531.8 500.5 520.0 C505.8 508.2 510.5 498.2 510.9 497.7 C511.3 497.3 516.4 507.8 522.2 521.0 L532.8 545.0 L510.8 545.0 C490.3 545.0 489.0 544.9 489.9 543.2 Z" style="fill:var(--wd,#0483C7)"/></svg></div>
+  <dl data-rv>
+    <dt>会社名</dt><dd>AsorA株式会社（アソラ）</dd>
+    <dt>所在地</dt><dd>〒832-0815 福岡県柳川市三橋町白鳥147番地2</dd>
+    <dt>代表者</dt><dd>代表取締役　[代表者名]</dd>
+    <dt>TEL</dt><dd>[電話番号]</dd>
+    <dt>事業内容</dt><dd>外構工事／造成工事／解体工事／伐採工事</dd>
+  </dl>
+</section>
+
+<section class="cta" id="contact">
+  <img src="https://images.unsplash.com/photo-1649807533255-bbc9c9fb7d77?auto=format&fit=crop&w=2000&q=70" alt="" loading="lazy">
+  <h2 class="lat" data-rv>Let’s build.</h2>
+  <p data-rv>土地のこと、外まわりのこと。まずはお気軽にご相談ください。</p>
+  <a class="tel" href="tel:" data-rv>TEL　[電話番号] <span aria-hidden="true">→</span></a>
+</section>
+<footer class="ft"><span>© ASORA CO., LTD.</span><span>YANAGAWA, FUKUOKA</span></footer>
+
+<script>
+(function(){
+  var sl=[].slice.call(document.querySelectorAll('.sl')),bt=[].slice.call(document.querySelectorAll('.bars button')),labs=['EXTERIOR','LAND DEVELOPMENT','DEMOLITION','TREE FELLING'],i=0,t;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function go(n){sl[i].classList.remove('on');bt[i].classList.remove('on');i=(n+sl.length)%sl.length;sl[i].classList.add('on');void bt[i].offsetWidth;bt[i].classList.add('on');document.getElementById('cn').textContent='0'+(i+1);document.getElementById('lb').textContent=labs[i];clearTimeout(t);if(!reduce)t=setTimeout(function(){go(i+1)},6000)}
+  bt.forEach(function(b,k){b.addEventListener('click',function(){go(k)})});
+  if(!reduce)t=setTimeout(function(){go(1)},6000);
+  var hs=document.getElementById('hs');
+  function step(d){var c=hs.querySelector('.card');hs.scrollBy({left:d*(c.offsetWidth+16),behavior:'smooth'})}
+  document.getElementById('pv').addEventListener('click',function(){step(-1)});
+  document.getElementById('nx').addEventListener('click',function(){step(1)});
+  var p=document.getElementById('stx'),txt=p.textContent;p.textContent='';
+  var hl={'伐る':1,'解く':1,'造る':1,'仕上げる':1,'AsorA':1};
+  txt.split(/(伐る|解く|造る|仕上げる|AsorA)/).forEach(function(s){if(!s)return;var parts=hl[s]?[s]:Array.from(s);parts.forEach(function(c){var sp=document.createElement('span');if(hl[s]){sp.className='b'};sp.textContent=c;p.appendChild(sp)})});
+  p.setAttribute('aria-label',txt);
+  var spans=[].slice.call(p.querySelectorAll('span'));
+  function lit(){var r=p.getBoundingClientRect(),vh=innerHeight,pr=Math.min(1,Math.max(0,(vh*0.85-r.top)/(r.height+vh*0.35)));var n=Math.round(pr*spans.length);spans.forEach(function(s,k){s.classList.toggle('lit',k<n)})}
+  if(reduce)spans.forEach(function(s){s.classList.add('lit')});else{addEventListener('scroll',lit,{passive:true});lit()}
+})();
+</script>
+<script>
+(function(){var els=document.querySelectorAll('[data-rv]');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px',threshold:0.12});
+els.forEach(function(e){io.observe(e)})})();
+</script>
+<script src="assets/switch.js" defer></script>
+</body>
+</html>
