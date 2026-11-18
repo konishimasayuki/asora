@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AsorA株式会社｜柳川の外構・舗装・解体</title>
+<meta name="description" content="福岡県柳川市のAsorA株式会社。庭工事、カーポート、アスファルト・生コン舗装、解体工事まで、家のまわりの地面を一社でつくる外構会社です。">
+<meta name="theme-color" content="#E2F0F9">
+<meta property="og:title" content="AsorA株式会社｜柳川の外構・舗装・解体">
+<meta property="og:description" content="庭・カーポート・アスファルト・生コン・解体。足もとから、空まで。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://asora.ninjin-konishi.workers.dev/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='60 8 475 410'%3E%3Cpath d='M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z' fill='%230483C7'/%3E%3Cpath d='M278.5 263H443L480 327.5H315L266.5 414H192Z' fill='%2328A7E0'/%3E%3Cpath d='M417 345.5H490L530.5 414H456Z' fill='%230483C7'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700;800&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0;background:#EEEBE4}
+a{color:#16181A}a:hover{color:#0477B8}
+/* ---------- intro (time-based) ---------- */
+@keyframes as-band{from{opacity:0;transform:translateY(-70px);fill:var(--from)}55%{opacity:1;transform:translateY(0);fill:var(--from)}to{opacity:1;transform:none;fill:var(--to)}}
+@keyframes as-fade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes as-line{from{transform:translateY(110%)}to{transform:none}}
+@keyframes as-sun{from{transform:translateY(180px) scale(.7);opacity:0}to{transform:none;opacity:1}}
+@keyframes as-draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes as-cue{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@keyframes as-marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes as-marq-r{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes as-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.as-band{transform-box:fill-box;transform-origin:center bottom;animation:as-band 1.1s cubic-bezier(.2,.8,.2,1) both}
+.as-fade{animation:as-fade 1s cubic-bezier(.2,.8,.2,1) both}
+.as-mask{display:block;overflow:hidden;padding-bottom:.06em}
+.as-mask>span{display:block;animation-name:as-line;animation-duration:1.1s;animation-timing-function:cubic-bezier(.2,.8,.2,1);animation-fill-mode:both}
+.as-sun{animation:as-sun 2.2s cubic-bezier(.2,.8,.2,1) .3s both}
+.as-hz{transform-origin:left;animation:as-draw 1.6s cubic-bezier(.7,0,.2,1) .2s both}
+.as-cue{animation:as-cue 2.4s cubic-bezier(.6,0,.3,1) infinite}
+.as-mq{animation:as-marq 36s linear infinite}
+.as-mq-r{animation:as-marq-r 44s linear infinite}
+.as-float{animation:as-float 6s ease-in-out infinite}
+.as-d1{animation-delay:.15s}.as-d2{animation-delay:.35s}.as-d3{animation-delay:.55s}.as-d4{animation-delay:.8s}
+.as-d5{animation-delay:1.0s}.as-d6{animation-delay:1.2s}.as-d7{animation-delay:1.4s}.as-d8{animation-delay:1.7s}.as-d9{animation-delay:1.95s}
+/* ---------- hover ---------- */
+.as-btn{transition:transform .35s cubic-bezier(.2,.8,.2,1),background-color .35s,color .35s}
+.as-btn:hover{transform:translateY(-3px)}
+.as-btn svg{transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.as-btn:hover svg{transform:translateX(5px)}
+.as-ph svg{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.as-ph:hover svg{transform:scale(1.08) rotate(-1deg)}
+.as-wk .as-wk-ov{opacity:0;transform:translateY(12px);transition:opacity .45s,transform .45s}
+.as-wk:hover .as-wk-ov,.as-wk:focus-within .as-wk-ov{opacity:1;transform:none}
+.as-nav{position:relative}
+.as-nav::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.as-nav:hover::after{transform:scaleX(1);transform-origin:left}
+.as-tab{transition:background-color .4s,color .4s,border-color .4s}
+/* ---------- scroll-driven ---------- */
+@supports (animation-timeline: view()){
+  .as-rv{animation:as-fade linear both;animation-timeline:view();animation-range:entry 0% entry 70%}
+  .as-clip{animation:as-clip linear both;animation-timeline:view();animation-range:entry 0% cover 40%}
+  .as-grow{transform-origin:left;animation:as-draw linear both;animation-timeline:view();animation-range:entry 10% cover 50%}
+  .as-par{animation:as-par linear both;animation-timeline:view()}
+  .as-big{animation:as-big linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+  @keyframes as-clip{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+  @keyframes as-par{from{transform:translateY(120px)}to{transform:translateY(-120px)}}
+  @keyframes as-big{from{transform:translateX(12%)}to{transform:translateX(-22%)}}
+}
+/* ---------- official logo motion ---------- */
+@keyframes lg-draw{0%{stroke-dashoffset:1;fill-opacity:0}55%{stroke-dashoffset:0;fill-opacity:0}100%{stroke-dashoffset:0;fill-opacity:1}}
+@keyframes lg-road{from{opacity:0;transform:translate(-120px,210px)}to{opacity:1;transform:none}}
+@keyframes lg-base{from{opacity:0;transform:translate(90px,150px)}to{opacity:1;transform:none}}
+@keyframes lg-rise{from{opacity:0;transform:translateY(120px)}to{opacity:1;transform:none}}
+@keyframes lg-sheen{0%{transform:translateX(0)}30%{transform:translateX(980px)}100%{transform:translateX(980px)}}
+@keyframes lg-spin{to{transform:rotate(360deg)}}
+.lg-p1{stroke-dasharray:1;animation:lg-draw 2s cubic-bezier(.6,0,.2,1) .2s both}
+.lg-p2{animation:lg-road 1.1s cubic-bezier(.2,1.25,.35,1) 1.25s both}
+.lg-p3{animation:lg-base 1s cubic-bezier(.2,1.25,.35,1) 1.55s both}
+.lg-l{transform-box:fill-box;animation:lg-rise .9s cubic-bezier(.2,.9,.25,1) both}
+.lg-l1{animation-delay:1.75s}.lg-l2{animation-delay:1.85s}.lg-l3{animation-delay:1.95s}.lg-l4{animation-delay:2.05s}.lg-l5{animation-delay:2.15s}
+.lg-sheen{animation:lg-sheen 6.5s cubic-bezier(.6,0,.3,1) 2.8s infinite both}
+.lg-ring{transform-origin:center;animation:lg-spin 60s linear infinite}
+.lg-s1,.lg-s2,.lg-s3,.lg-st{transform-box:fill-box;transform-origin:center}
+.lg-h{transition:transform .8s cubic-bezier(.2,.9,.2,1)}
+.lg-wrap:hover .lg-h1{transform:translate(-14px,-16px)}
+.lg-wrap:hover .lg-h2{transform:translate(-34px,24px)}
+.lg-wrap:hover .lg-h3{transform:translate(30px,26px)}
+.lg-wrap:hover .lg-ht{transform:translateY(18px)}
+@supports (animation-timeline: view()){
+  .lg-s1,.lg-s2,.lg-s3,.lg-st{animation-timeline:view();animation-range:exit 0% exit 90%;animation-fill-mode:both;animation-timing-function:linear}
+  .lg-s1{animation-name:lg-x1}.lg-s2{animation-name:lg-x2}.lg-s3{animation-name:lg-x3}.lg-st{animation-name:lg-xt}
+  @keyframes lg-x1{to{transform:translate(-60px,-90px) rotate(-8deg)}}
+  @keyframes lg-x2{to{transform:translate(-160px,120px) rotate(6deg)}}
+  @keyframes lg-x3{to{transform:translate(170px,140px) rotate(14deg)}}
+  @keyframes lg-xt{to{transform:translateY(120px);opacity:0}}
+}
+input:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:2px solid #0477B8;outline-offset:3px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none !important;transition:none !important}}
+</style>
+</head>
+<body>
+<div style="background: #EEEBE4; color: #16181A; font-family: 'Zen Kaku Gothic New', 'Hiragino Sans', 'Noto Sans JP', sans-serif; font-size: 16px; line-height: 1.9; overflow-x: clip">
+
+  <!-- ===== HEADER ===== -->
+  <header style="position: sticky; top: 0; z-index: 50; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 28px; padding: 14px clamp(20px, 4vw, 56px); background: rgba(226, 240, 249, 0.84); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(22, 24, 26, 0.12)">
+    <a href="#top" aria-label="AsorA株式会社 トップへ" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #16181A">
+      <svg aria-hidden="true" viewBox="60 8 475 410" style="width: 40px; height: auto"><path d="M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z" fill="#0483C7"></path><path d="M278.5 263H443L480 327.5H315L266.5 414H192Z" fill="#28A7E0"></path><path d="M417 345.5H490L530.5 414H456Z" fill="#0483C7"></path></svg>
+      <svg aria-hidden="true" viewBox="10 442 576 166" style="width: 78px; height: auto"><path fill-rule="evenodd" d="M46.1 584.0 L54.0 566.5 L85.3 566.8 L116.5 567.1 L123.4 583.3 C127.2 592.2 130.9 600.1 131.5 600.8 C132.3 601.7 135.8 602.0 144.3 601.8 L155.9 601.5 L144.9 577.0 C138.9 563.5 131.5 547.1 128.6 540.5 C125.6 533.9 119.3 519.7 114.5 509.0 C100.1 476.8 86.8 447.5 86.6 447.2 C86.4 447.1 80.7 458.8 74.0 473.2 C67.2 487.7 57.6 508.1 52.7 518.5 C47.8 529.0 42.0 541.3 39.8 546.0 C37.6 550.7 34.1 558.1 32.0 562.5 C29.9 566.9 26.3 574.5 24.0 579.5 C18.3 591.7 14.0 601.1 14.0 601.6 C14.0 601.9 19.4 601.9 26.1 601.8 L38.2 601.5 L46.1 584.0 Z M64.0 544.4 C64.0 542.5 85.4 497.1 86.0 497.7 C86.6 498.4 100.8 530.2 105.7 541.8 L107.0 545.0 L85.5 545.0 C73.7 545.0 64.0 544.7 64.0 544.4 Z M216.5 601.5 C227.8 596.5 234.0 587.7 234.8 575.2 C235.7 561.0 231.2 555.3 210.2 544.7 C196.0 537.4 193.3 535.0 194.9 530.7 C197.4 524.1 207.4 524.4 213.9 531.3 L216.2 533.9 L224.1 528.7 C228.4 525.8 232.0 523.1 232.0 522.5 C232.0 522.0 229.3 519.0 226.1 515.9 C221.5 511.3 218.9 509.7 214.4 508.4 C206.6 506.2 196.0 506.9 189.6 510.1 C177.9 515.9 171.6 529.8 175.1 542.3 C176.9 549.0 182.2 553.6 195.6 560.0 C203.3 563.7 208.7 567.0 210.4 569.0 C215.6 575.2 212.5 583.4 204.5 584.9 C197.2 586.2 191.8 583.3 188.5 576.4 L187.0 573.1 L178.7 577.1 C174.2 579.2 170.4 581.7 170.2 582.4 C169.4 586.2 178.7 597.8 185.3 601.2 C193.3 605.2 207.8 605.4 216.5 601.5 Z M320.2 602.0 C339.2 596.2 352.0 579.9 353.6 559.7 C354.7 545.6 349.7 531.0 340.5 521.6 C321.5 502.4 288.0 502.1 269.0 521.0 C246.3 543.6 252.3 584.5 280.4 598.7 C288.5 602.8 292.9 603.8 303.6 603.9 C311.2 604.0 315.5 603.5 320.2 602.0 Z M294.5 583.4 C288.4 581.3 283.5 576.6 280.3 570.2 C278.0 565.4 277.5 563.2 277.5 556.5 C277.5 545.6 279.8 539.4 285.9 533.7 C291.3 528.6 295.7 526.9 303.7 526.7 C311.7 526.5 316.9 528.3 322.2 533.0 C328.4 538.4 331.3 545.3 331.4 555.0 C331.5 565.0 329.0 572.0 323.5 577.6 C316.6 584.4 304.3 586.9 294.5 583.4 Z M403.2 572.2 C403.5 543.4 403.6 542.4 405.8 537.8 C409.1 531.2 413.0 528.7 420.6 528.2 C425.0 527.9 427.6 528.3 429.9 529.5 C431.7 530.4 433.3 531.0 433.4 530.8 C435.2 528.0 441.8 511.5 441.4 510.9 C440.4 509.3 430.6 507.0 424.6 507.0 C417.5 507.0 411.1 509.6 406.2 514.3 L403.0 517.4 L403.0 513.2 L403.0 509.0 L392.5 509.0 L382.0 509.0 L381.8 555.1 C381.6 580.4 381.7 601.4 381.9 601.6 C382.1 601.8 387.0 602.0 392.6 602.0 L402.9 602.0 L403.2 572.2 Z M471.7 584.2 L479.8 566.5 L510.0 566.2 C528.7 566.1 540.7 566.3 541.4 567.0 C542.1 567.5 545.9 575.6 550.0 585.0 L557.3 602.0 L569.2 602.0 C575.7 602.0 581.0 601.6 581.0 601.1 C581.0 600.6 576.0 589.0 569.9 575.3 C563.8 561.7 550.9 533.0 541.3 511.5 C531.7 490.1 521.3 466.8 518.2 459.7 C515.2 452.7 512.3 447.3 512.0 447.7 C511.6 448.2 504.8 462.2 497.0 479.0 C489.1 495.8 480.7 513.8 478.3 519.0 C475.8 524.2 470.3 535.9 466.0 545.0 C449.0 580.9 440.0 600.4 440.0 601.2 C440.0 601.6 445.3 602.0 451.8 602.0 L463.6 602.0 L471.7 584.2 Z M489.9 543.2 C490.4 542.3 495.1 531.8 500.5 520.0 C505.8 508.2 510.5 498.2 510.9 497.7 C511.3 497.3 516.4 507.8 522.2 521.0 L532.8 545.0 L510.8 545.0 C490.3 545.0 489.0 544.9 489.9 543.2 Z" fill="#0483C7"></path></svg>
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.18em">AsorA株式会社</span>
+    </a>
+    <nav aria-label="メインメニュー" style="display: flex; flex-wrap: wrap; gap: 0 26px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.18em; font-weight: 500">
+      <a class="as-nav" href="#service" style="text-decoration: none; padding: 12px 0">SERVICE</a>
+      <a class="as-nav" href="#build" style="text-decoration: none; padding: 12px 0">BUILD</a>
+      <a class="as-nav" href="#works" style="text-decoration: none; padding: 12px 0">WORKS</a>
+      <a class="as-nav" href="#flow" style="text-decoration: none; padding: 12px 0">FLOW</a>
+      <a class="as-nav" href="#company" style="text-decoration: none; padding: 12px 0">COMPANY</a>
+    </nav>
+    <a class="as-btn" href="#contact" style="display: inline-flex; align-items: center; gap: 10px; min-height: 46px; padding: 0 22px; background: #16181A; color: #EEEBE4; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; border-radius: 999px">ご相談・お見積り
+      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+    </a>
+  </header>
+
+  <!-- ===== HERO : SKY ===== -->
+  <section id="top" style="position: relative; background: #E2F0F9; overflow: hidden; padding: clamp(28px, 4vw, 48px) clamp(20px, 4vw, 56px) 0">
+    <div class="as-fade as-d1" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.22em; color: #3E4A5E; position: relative; z-index: 2">
+      <span>GL +∞ — SKY</span>
+      <span>YANAGAWA, FUKUOKA ／ 33.16°N 130.40°E</span>
+    </div>
+
+    <div aria-hidden="true" class="as-sun" style="position: absolute; right: 4%; top: clamp(60px, 7vw, 100px); width: clamp(120px, 18vw, 260px); aspect-ratio: 1; border-radius: 50%; background: #C4E4F5; z-index: 0"></div>
+
+    <svg aria-hidden="true" class="as-par" viewBox="60 8 475 410" style="position: absolute; left: -8%; top: 4%; width: min(78vw, 1100px); height: auto; z-index: 0; pointer-events: none"><path d="M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z" fill="none" stroke="rgba(4,131,199,.14)" stroke-width="1.2"></path><path d="M278.5 263H443L480 327.5H315L266.5 414H192Z" fill="none" stroke="rgba(4,131,199,.14)" stroke-width="1.2"></path><path d="M417 345.5H490L530.5 414H456Z" fill="none" stroke="rgba(4,131,199,.14)" stroke-width="1.2"></path></svg>
+
+    <div style="position: relative; z-index: 1; max-width: 1240px; margin: clamp(28px, 4vw, 56px) auto 0; display: flex; flex-wrap: wrap-reverse; align-items: center; justify-content: space-between; gap: 48px clamp(32px, 5vw, 80px); padding-bottom: clamp(72px, 8vw, 120px)">
+      <div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
+      <h1 style="margin: 0; font-family: 'Shippori Mincho B1', 'Yu Mincho', serif; font-weight: 800; font-size: clamp(44px, 6.4vw, 100px); line-height: 1.12; letter-spacing: 0.02em">
+        <span class="as-mask"><span class="as-d6">足もとから、</span></span>
+        <span class="as-mask"><span class="as-d7">空まで。</span></span>
+      </h1>
+      <div class="as-fade as-d8" style="max-width: 30em; display: flex; flex-direction: column; gap: 22px">
+        <p style="margin: 0; color: #2E3644">解体で土地を解き、整地で整え、舗装で固め、庭とカーポートで彩る。柳川のAsorAは、家のまわりの「地面」を一社でつくる外構会社です。</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px">
+          <a class="as-btn" href="#contact" style="display: inline-flex; align-items: center; gap: 12px; min-height: 54px; padding: 0 28px; background: #0477B8; color: #FFFFFF; text-decoration: none; font-weight: 700; letter-spacing: 0.08em; border-radius: 999px">ご相談・お見積り
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+          <a class="as-btn" href="#build" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 28px; border: 1px solid #16181A; text-decoration: none; font-weight: 500; letter-spacing: 0.08em; border-radius: 999px">工事の流れを見る</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="lg-wrap" style="flex: 0 1 clamp(280px, 40vw, 540px); min-width: 0; position: relative; cursor: crosshair">
+        <svg aria-hidden="true" class="lg-ring" viewBox="0 0 200 200" style="position: absolute; inset: -9%; width: 118%; height: 118%; pointer-events: none">
+          <defs><path id="lg-circle" d="M100 100m-92 0a92 92 0 1 1 184 0a92 92 0 1 1 -184 0"></path></defs>
+          <text font-family="'Space Grotesk', Arial, sans-serif" font-size="6.2" letter-spacing="3.1" fill="#3E4A5E"><textPath href="#lg-circle">EXTERIOR · GARDEN · CARPORT · ASPHALT · CONCRETE · DEMOLITION · YANAGAWA · </textPath></text>
+        </svg>
+        <svg role="img" aria-label="AsorA" viewBox="0 0 595 615" style="position: relative; display: block; width: 100%; height: auto; overflow: visible">
+          <defs>
+            <clipPath id="lg-mark-clip"><path d="M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z"></path><path d="M278.5 263H443L480 327.5H315L266.5 414H192Z"></path><path d="M417 345.5H490L530.5 414H456Z"></path></clipPath>
+            <linearGradient id="lg-sheen-g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"></stop><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".55"></stop><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"></stop></linearGradient>
+            <clipPath id="lg-text-clip"><rect x="0" y="436" width="595" height="179"></rect></clipPath>
+          </defs>
+          <g class="lg-s1"><g class="lg-h lg-h1"><path class="lg-p1" pathLength="1" d="M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z" fill="#0483C7" stroke="#0483C7" stroke-width="3" stroke-linejoin="round"></path></g></g>
+          <g class="lg-s2"><g class="lg-h lg-h2"><path class="lg-p2" d="M278.5 263H443L480 327.5H315L266.5 414H192Z" fill="#28A7E0"></path></g></g>
+          <g class="lg-s3"><g class="lg-h lg-h3"><path class="lg-p3" d="M417 345.5H490L530.5 414H456Z" fill="#0483C7"></path></g></g>
+          <g clip-path="url(#lg-mark-clip)"><g transform="skewX(-20)"><rect class="lg-sheen" x="-420" y="0" width="260" height="440" fill="url(#lg-sheen-g)"></rect></g></g>
+          <g class="lg-st"><g class="lg-h lg-ht"><g clip-path="url(#lg-text-clip)"><path class="lg-l lg-l1" fill-rule="evenodd" d="M46.1 584.0 L54.0 566.5 L85.3 566.8 L116.5 567.1 L123.4 583.3 C127.2 592.2 130.9 600.1 131.5 600.8 C132.3 601.7 135.8 602.0 144.3 601.8 L155.9 601.5 L144.9 577.0 C138.9 563.5 131.5 547.1 128.6 540.5 C125.6 533.9 119.3 519.7 114.5 509.0 C100.1 476.8 86.8 447.5 86.6 447.2 C86.4 447.1 80.7 458.8 74.0 473.2 C67.2 487.7 57.6 508.1 52.7 518.5 C47.8 529.0 42.0 541.3 39.8 546.0 C37.6 550.7 34.1 558.1 32.0 562.5 C29.9 566.9 26.3 574.5 24.0 579.5 C18.3 591.7 14.0 601.1 14.0 601.6 C14.0 601.9 19.4 601.9 26.1 601.8 L38.2 601.5 L46.1 584.0 Z M64.0 544.4 C64.0 542.5 85.4 497.1 86.0 497.7 C86.6 498.4 100.8 530.2 105.7 541.8 L107.0 545.0 L85.5 545.0 C73.7 545.0 64.0 544.7 64.0 544.4 Z" fill="#0483C7"></path><path class="lg-l lg-l2" fill-rule="evenodd" d="M216.5 601.5 C227.8 596.5 234.0 587.7 234.8 575.2 C235.7 561.0 231.2 555.3 210.2 544.7 C196.0 537.4 193.3 535.0 194.9 530.7 C197.4 524.1 207.4 524.4 213.9 531.3 L216.2 533.9 L224.1 528.7 C228.4 525.8 232.0 523.1 232.0 522.5 C232.0 522.0 229.3 519.0 226.1 515.9 C221.5 511.3 218.9 509.7 214.4 508.4 C206.6 506.2 196.0 506.9 189.6 510.1 C177.9 515.9 171.6 529.8 175.1 542.3 C176.9 549.0 182.2 553.6 195.6 560.0 C203.3 563.7 208.7 567.0 210.4 569.0 C215.6 575.2 212.5 583.4 204.5 584.9 C197.2 586.2 191.8 583.3 188.5 576.4 L187.0 573.1 L178.7 577.1 C174.2 579.2 170.4 581.7 170.2 582.4 C169.4 586.2 178.7 597.8 185.3 601.2 C193.3 605.2 207.8 605.4 216.5 601.5 Z" fill="#0483C7"></path><path class="lg-l lg-l3" fill-rule="evenodd" d="M320.2 602.0 C339.2 596.2 352.0 579.9 353.6 559.7 C354.7 545.6 349.7 531.0 340.5 521.6 C321.5 502.4 288.0 502.1 269.0 521.0 C246.3 543.6 252.3 584.5 280.4 598.7 C288.5 602.8 292.9 603.8 303.6 603.9 C311.2 604.0 315.5 603.5 320.2 602.0 Z M294.5 583.4 C288.4 581.3 283.5 576.6 280.3 570.2 C278.0 565.4 277.5 563.2 277.5 556.5 C277.5 545.6 279.8 539.4 285.9 533.7 C291.3 528.6 295.7 526.9 303.7 526.7 C311.7 526.5 316.9 528.3 322.2 533.0 C328.4 538.4 331.3 545.3 331.4 555.0 C331.5 565.0 329.0 572.0 323.5 577.6 C316.6 584.4 304.3 586.9 294.5 583.4 Z" fill="#0483C7"></path><path class="lg-l lg-l4" fill-rule="evenodd" d="M403.2 572.2 C403.5 543.4 403.6 542.4 405.8 537.8 C409.1 531.2 413.0 528.7 420.6 528.2 C425.0 527.9 427.6 528.3 429.9 529.5 C431.7 530.4 433.3 531.0 433.4 530.8 C435.2 528.0 441.8 511.5 441.4 510.9 C440.4 509.3 430.6 507.0 424.6 507.0 C417.5 507.0 411.1 509.6 406.2 514.3 L403.0 517.4 L403.0 513.2 L403.0 509.0 L392.5 509.0 L382.0 509.0 L381.8 555.1 C381.6 580.4 381.7 601.4 381.9 601.6 C382.1 601.8 387.0 602.0 392.6 602.0 L402.9 602.0 L403.2 572.2 Z" fill="#0483C7"></path><path class="lg-l lg-l5" fill-rule="evenodd" d="M471.7 584.2 L479.8 566.5 L510.0 566.2 C528.7 566.1 540.7 566.3 541.4 567.0 C542.1 567.5 545.9 575.6 550.0 585.0 L557.3 602.0 L569.2 602.0 C575.7 602.0 581.0 601.6 581.0 601.1 C581.0 600.6 576.0 589.0 569.9 575.3 C563.8 561.7 550.9 533.0 541.3 511.5 C531.7 490.1 521.3 466.8 518.2 459.7 C515.2 452.7 512.3 447.3 512.0 447.7 C511.6 448.2 504.8 462.2 497.0 479.0 C489.1 495.8 480.7 513.8 478.3 519.0 C475.8 524.2 470.3 535.9 466.0 545.0 C449.0 580.9 440.0 600.4 440.0 601.2 C440.0 601.6 445.3 602.0 451.8 602.0 L463.6 602.0 L471.7 584.2 Z M489.9 543.2 C490.4 542.3 495.1 531.8 500.5 520.0 C505.8 508.2 510.5 498.2 510.9 497.7 C511.3 497.3 516.4 507.8 522.2 521.0 L532.8 545.0 L510.8 545.0 C490.3 545.0 489.0 544.9 489.9 543.2 Z" fill="#0483C7"></path></g></g></g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="as-fade as-d9" style="position: absolute; left: clamp(20px, 4vw, 56px); bottom: 24px; display: flex; align-items: flex-end; gap: 12px; font-family: 'Space Grotesk', sans-serif; font-size: 11px; letter-spacing: 0.3em; color: #3E4A5E; z-index: 2">
+      <span style="display: block; width: 1px; height: 48px; background: rgba(22,24,26,.18); position: relative; overflow: hidden"><span class="as-cue" style="position: absolute; inset: 0; background: #16181A"></span></span>
+      <span style="writing-mode: vertical-rl">SCROLL ↓ 地中へ</span>
+    </div>
+
+    <div class="as-hz" style="position: relative; height: 3px; background: #16181A; margin: 0 calc(-1 * clamp(20px, 4vw, 56px))"></div>
+  </section>
+
+  <!-- ===== MARQUEE : GROUND LINE ===== -->
+  <div aria-hidden="true" style="background: #16181A; color: #EEEBE4; overflow: hidden; padding: 26px 0 22px; display: flex; flex-direction: column; gap: 6px">
+    <div class="as-mq" style="display: flex; width: max-content; gap: 44px; white-space: nowrap; font-family: 'Space Grotesk', sans-serif; font-size: clamp(26px, 3.6vw, 52px); font-weight: 700; letter-spacing: -0.01em; line-height: 1.2">
+      <span>GARDEN</span><span style="color: #28A7E0">▲</span><span>CARPORT</span><span style="color: #28A7E0">▲</span><span>ASPHALT</span><span style="color: #28A7E0">▲</span><span>CONCRETE</span><span style="color: #28A7E0">▲</span><span>DEMOLITION</span><span style="color: #28A7E0">▲</span>
+      <span>GARDEN</span><span style="color: #28A7E0">▲</span><span>CARPORT</span><span style="color: #28A7E0">▲</span><span>ASPHALT</span><span style="color: #28A7E0">▲</span><span>CONCRETE</span><span style="color: #28A7E0">▲</span><span>DEMOLITION</span><span style="color: #28A7E0">▲</span>
+    </div>
+    <div class="as-mq-r" style="display: flex; width: max-content; gap: 44px; white-space: nowrap; font-family: 'Shippori Mincho B1', serif; font-size: clamp(26px, 3.6vw, 52px); font-weight: 800; line-height: 1.25; color: transparent; -webkit-text-stroke: 1px #EEEBE4">
+      <span>庭をつくる</span><span>車庫をつくる</span><span>道をつくる</span><span>土間をつくる</span><span>更地にもどす</span>
+      <span>庭をつくる</span><span>車庫をつくる</span><span>道をつくる</span><span>土間をつくる</span><span>更地にもどす</span>
+    </div>
+  </div>
+
+  <!-- ===== CONCEPT ===== -->
+  <section style="position: relative; overflow: hidden; padding: clamp(96px, 12vw, 180px) clamp(20px, 4vw, 56px)">
+    <p aria-hidden="true" class="as-big" style="position: absolute; left: 0; top: 50%; margin: -0.5em 0 0; white-space: nowrap; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(160px, 26vw, 400px); line-height: 1; letter-spacing: -0.05em; color: #E3DED4">GROUND TO SKY</p>
+    <div style="position: relative; max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px clamp(40px, 6vw, 96px)">
+      <p class="as-rv" style="margin: 0; flex: 0 0 170px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.24em">GL ±0.00<span style="display: block; font-family: 'Zen Kaku Gothic New', sans-serif; letter-spacing: 0.1em; color: #5D6166">私たちの考え</span></p>
+      <div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 40px">
+        <h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 800; font-size: clamp(34px, 4.8vw, 72px); line-height: 1.38; letter-spacing: 0.03em">
+          <span class="as-rv" style="display: block">地面を整える仕事は、</span>
+          <span class="as-rv" style="display: block">空を広くする仕事だ。</span>
+        </h2>
+        <div class="as-rv" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px 48px; color: #3E4246">
+          <p style="margin: 0">外まわりの工事は、解体・整地・舗装・外構と、いくつもの工程が地層のように重なってできています。</p>
+          <p style="margin: 0">AsorAはそのすべてを自社で。ロゴのAを形づくる3つのピースは、土地を支える礎、暮らしをつなぐ道、そして空へ向かう大きなA。ふと見上げた空がすこし広く感じられる、そんな住まいの外側をつくります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICE : STRATA ===== -->
+  <div id="service">
+    <div style="padding: 0 clamp(20px, 4vw, 56px) 40px">
+      <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+        <h2 class="as-rv" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(56px, 9vw, 140px); line-height: 0.86; letter-spacing: -0.05em">Service</h2>
+        <p class="as-rv" style="margin: 0; font-size: 14px; letter-spacing: 0.14em; max-width: 22em">空から地中へ。スクロールするほど、工事は深い層へ進みます。</p>
+      </div>
+      <div class="as-grow" style="max-width: 1240px; margin: 28px auto 0; height: 2px; background: #16181A"></div>
+    </div>
+
+    <!-- 01 carport : sky layer -->
+    <section style="position: relative; overflow: hidden; background: #E2F0F9; padding: clamp(72px, 9vw, 130px) clamp(20px, 4vw, 56px)">
+      <p aria-hidden="true" class="as-par" style="position: absolute; right: clamp(8px, 3vw, 48px); top: 40px; margin: 0; writing-mode: vertical-rl; font-family: 'Shippori Mincho B1', serif; font-weight: 800; font-size: clamp(120px, 16vw, 240px); line-height: 1; color: #CDE5F3">守る</p>
+      <div style="position: relative; max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px clamp(32px, 5vw, 80px); align-items: center">
+        <div class="as-ph as-clip" style="flex: 1.15 1 440px; min-width: 0; position: relative; aspect-ratio: 4 / 3; background: #C4E1F2; overflow: hidden; display: flex; align-items: center; justify-content: center; color: #16181A">
+          <svg aria-hidden="true" viewBox="0 0 400 300" style="width: 60%; height: auto" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 250h360"></path><path d="M50 90l300-20v12L50 102z"></path><path d="M70 101v149M330 84v166"></path><path d="M110 216c0-20 14-32 32-32h20l20-26h70l26 26h14c14 0 24 12 24 26v26H110z"></path><circle cx="150" cy="248" r="14"></circle><circle cx="262" cy="248" r="14"></circle><path d="M190 162h56l18 22h-86z"></path></svg>
+          <span style="position: absolute; left: 20px; bottom: 16px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.16em">PHOTO — カーポート</span>
+        </div>
+        <div class="as-rv" style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+          <p style="margin: 0; display: flex; align-items: center; gap: 14px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.22em; color: #3E4A5E"><span style="font-size: 64px; font-weight: 700; line-height: 1; letter-spacing: -0.04em; color: #0477B8">01</span>GL +2.40m</p>
+          <h3 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-size: clamp(30px, 3.2vw, 44px); font-weight: 800; line-height: 1.3">カーポート・エクステリア</h3>
+          <p style="margin: 0; color: #2E3644">雨の日も、夏の日差しも。車と人を守るカーポート、サイクルポート、テラス屋根を、建物との調和を考えて設置します。</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <span style="padding: 6px 14px; border: 1px solid #16181A; border-radius: 999px; font-size: 13px">カーポート</span>
+            <span style="padding: 6px 14px; border: 1px solid #16181A; border-radius: 999px; font-size: 13px">サイクルポート</span>
+            <span style="padding: 6px 14px; border: 1px solid #16181A; border-radius: 999px; font-size: 13px">テラス屋根</span>
+            <span style="padding: 6px 14px; border: 1px solid #16181A; border-radius: 999px; font-size: 13px">門扉・フェンス</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 garden : green layer -->
+    <section style="position: relative; overflow: hidden; background: #2F6B4F; color: #F1F3EC; padding: clamp(72px, 9vw, 130px) clamp(20px, 4vw, 56px)">
+      <p aria-hidden="true" class="as-par" style="position: absolute; left: clamp(8px, 3vw, 48px); top: 40px; margin: 0; writing-mode: vertical-rl; font-family: 'Shippori Mincho B1', serif; font-weight: 800; font-size: clamp(120px, 16vw, 240px); line-height: 1; color: #3A7A5C">彩る</p>
+      <div style="position: relative; max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap-reverse; gap: 40px clamp(32px, 5vw, 80px); align-items: center">
+        <div class="as-rv" style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+          <p style="margin: 0; display: flex; align-items: center; gap: 14px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.22em; color: #CFE0D5"><span style="font-size: 64px; font-weight: 700; line-height: 1; letter-spacing: -0.04em; color: #F1F3EC">02</span>GL ±0.00</p>
+          <h3 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-size: clamp(30px, 3.2vw, 44px); font-weight: 800; line-height: 1.3">庭工事</h3>
+          <p style="margin: 0; color: #DCE7DF">植栽や芝、アプローチ、門まわり、デッキまで。住まいの顔になる庭を、敷地と暮らし方に合わせて設計・施工します。</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <span style="padding: 6px 14px; border: 1px solid #F1F3EC; border-radius: 999px; font-size: 13px">植栽・芝張り</span>
+            <span style="padding: 6px 14px; border: 1px solid #F1F3EC; border-radius: 999px; font-size: 13px">アプローチ</span>
+            <span style="padding: 6px 14px; border: 1px solid #F1F3EC; border-radius: 999px; font-size: 13px">門柱まわり</span>
+            <span style="padding: 6px 14px; border: 1px solid #F1F3EC; border-radius: 999px; font-size: 13px">デッキ・テラス</span>
+          </div>
+        </div>
+        <div class="as-ph as-clip" style="flex: 1.15 1 440px; min-width: 0; position: relative; aspect-ratio: 4 / 3; background: #4E8A6C; overflow: hidden; display: flex; align-items: center; justify-content: center; color: #F1F3EC">
+          <svg aria-hidden="true" viewBox="0 0 400 300" style="width: 56%; height: auto" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 240h360"></path><path d="M110 240V150"></path><path d="M110 150c-40 0-60-30-50-60 10-30 40-40 50-60 10 20 40 30 50 60 10 30-10 60-50 60z"></path><path d="M110 190l-20-18M110 175l22-20"></path><ellipse cx="220" cy="262" rx="26" ry="8"></ellipse><ellipse cx="270" cy="278" rx="26" ry="8"></ellipse><ellipse cx="320" cy="262" rx="26" ry="8"></ellipse><path d="M250 240v-40M262 240v-56M274 240v-34M300 240v-46M312 240v-30"></path></svg>
+          <span style="position: absolute; left: 20px; bottom: 16px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.16em">PHOTO — 庭工事</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 paving : asphalt layer -->
+    <section style="position: relative; overflow: hidden; background: #2A2C2F; color: #EEEBE4; padding: clamp(72px, 9vw, 130px) clamp(20px, 4vw, 56px)">
+      <p aria-hidden="true" class="as-par" style="position: absolute; right: clamp(8px, 3vw, 48px); top: 40px; margin: 0; writing-mode: vertical-rl; font-family: 'Shippori Mincho B1', serif; font-weight: 800; font-size: clamp(120px, 16vw, 240px); line-height: 1; color: #36393D">固める</p>
+      <div style="position: relative; max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px clamp(32px, 5vw, 80px); align-items: center">
+        <div class="as-ph as-clip" style="flex: 1.15 1 440px; min-width: 0; position: relative; aspect-ratio: 4 / 3; background: #3A3D41; overflow: hidden; display: flex; align-items: center; justify-content: center; color: #EEEBE4">
+          <svg aria-hidden="true" viewBox="0 0 400 300" style="width: 58%; height: auto" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 250h360"></path><path d="M40 270h320" stroke-dasharray="26 18"></path><circle cx="120" cy="214" r="34"></circle><path d="M120 180h70v-50h60l20 40v44h-64"></path><circle cx="256" cy="226" r="22"></circle><path d="M200 130v-26h40"></path><path d="M300 250v-30h50v30"></path></svg>
+          <span style="position: absolute; left: 20px; bottom: 16px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.16em">PHOTO — アスファルト・生コン</span>
+        </div>
+        <div class="as-rv" style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+          <p style="margin: 0; display: flex; align-items: center; gap: 14px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.22em; color: #A3A7AC"><span style="font-size: 64px; font-weight: 700; line-height: 1; letter-spacing: -0.04em; color: #28A7E0">03</span>GL −0.15m</p>
+          <h3 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-size: clamp(30px, 3.2vw, 44px); font-weight: 800; line-height: 1.3">アスファルト・生コン舗装</h3>
+          <p style="margin: 0; color: #C9CCD0">駐車場、通路、店舗や事業所の敷地まで。アスファルト舗装と生コンによる土間コンクリートで、長く使える丈夫な地面をつくります。</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <span style="padding: 6px 14px; border: 1px solid #EEEBE4; border-radius: 999px; font-size: 13px">アスファルト舗装</span>
+            <span style="padding: 6px 14px; border: 1px solid #EEEBE4; border-radius: 999px; font-size: 13px">土間コンクリート</span>
+            <span style="padding: 6px 14px; border: 1px solid #EEEBE4; border-radius: 999px; font-size: 13px">駐車場</span>
+            <span style="padding: 6px 14px; border: 1px solid #EEEBE4; border-radius: 999px; font-size: 13px">整地・造成</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 demolition : earth layer -->
+    <section style="position: relative; overflow: hidden; background: #5A4330; color: #F3EEE6; padding: clamp(72px, 9vw, 130px) clamp(20px, 4vw, 56px)">
+      <p aria-hidden="true" class="as-par" style="position: absolute; left: clamp(8px, 3vw, 48px); top: 40px; margin: 0; writing-mode: vertical-rl; font-family: 'Shippori Mincho B1', serif; font-weight: 800; font-size: clamp(120px, 16vw, 240px); line-height: 1; color: #664D38">解く</p>
+      <div style="position: relative; max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap-reverse; gap: 40px clamp(32px, 5vw, 80px); align-items: center">
+        <div class="as-rv" style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+          <p style="margin: 0; display: flex; align-items: center; gap: 14px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.22em; color: #D9CBB8"><span style="font-size: 64px; font-weight: 700; line-height: 1; letter-spacing: -0.04em; color: #E7C99A">04</span>GL −1.20m</p>
+          <h3 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-size: clamp(30px, 3.2vw, 44px); font-weight: 800; line-height: 1.3">解体工事</h3>
+          <p style="margin: 0; color: #E4DACB">家屋や倉庫、ブロック塀、古い外構の撤去まで。近隣へのご挨拶や養生にも気を配り、次に建つもののための更地へ戻します。</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <span style="padding: 6px 14px; border: 1px solid #F3EEE6; border-radius: 999px; font-size: 13px">家屋解体</span>
+            <span style="padding: 6px 14px; border: 1px solid #F3EEE6; border-radius: 999px; font-size: 13px">ブロック塀撤去</span>
+            <span style="padding: 6px 14px; border: 1px solid #F3EEE6; border-radius: 999px; font-size: 13px">外構撤去</span>
+            <span style="padding: 6px 14px; border: 1px solid #F3EEE6; border-radius: 999px; font-size: 13px">更地・整地</span>
+          </div>
+        </div>
+        <div class="as-ph as-clip" style="flex: 1.15 1 440px; min-width: 0; position: relative; aspect-ratio: 4 / 3; background: #735A43; overflow: hidden; display: flex; align-items: center; justify-content: center; color: #F3EEE6">
+          <svg aria-hidden="true" viewBox="0 0 400 300" style="width: 58%; height: auto" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 250h360"></path><rect x="60" y="218" width="140" height="28" rx="14"></rect><circle cx="80" cy="232" r="8"></circle><circle cx="180" cy="232" r="8"></circle><path d="M80 218v-44h70l20 44"></path><path d="M150 190l80-80 60 30"></path><path d="M290 140l20 40-30 10"></path><path d="M300 250v-40l30-20 20 14v46"></path><path d="M318 230h10M340 222v12"></path></svg>
+          <span style="position: absolute; left: 20px; bottom: 16px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.16em">PHOTO — 解体工事</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== BUILD SIMULATOR ===== -->
+  <section id="build" style="background: #16181A; color: #EEEBE4; padding: clamp(88px, 10vw, 150px) clamp(20px, 4vw, 56px)">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(36px, 4vw, 56px)">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px 48px">
+        <div class="as-rv" style="flex: 1 1 520px; min-width: 0">
+          <p style="margin: 0 0 18px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.24em; color: #A3A7AC">ONE STOP BUILD</p>
+          <h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 800; font-size: clamp(34px, 4.6vw, 64px); line-height: 1.35">解体から、仕上げまで。<br>窓口は<span style="color: #28A7E0">ひとつ</span>。</h2>
+        </div>
+        <p class="as-rv" style="margin: 0; flex: 1 1 340px; min-width: 0; color: #C9CCD0">業者を分けずに一社で進められるから、工程の調整も打ち合わせもシンプル。下のボタンで、ひとつの土地が仕上がるまでを見てみてください。</p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 10px" role="group" aria-label="工程を選ぶ">
+        
+          <button type="button" class="as-tab" data-step="0" aria-pressed="true" style="flex: 1 1 200px; display: flex; align-items: baseline; gap: 14px; min-height: 64px; padding: 14px 20px; border: 1px solid #0477B8; background: #0477B8; color: #FFFFFF; border-radius: 0; font: inherit; text-align: left; cursor: pointer">
+            <span style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.14em">01</span>
+            <span style="font-family: 'Shippori Mincho B1', serif; font-size: 24px; font-weight: 800">解く</span>
+            <span style="font-size: 13px">解体・撤去</span>
+          </button>
+          <button type="button" class="as-tab" data-step="1" aria-pressed="false" style="flex: 1 1 200px; display: flex; align-items: baseline; gap: 14px; min-height: 64px; padding: 14px 20px; border: 1px solid #3E4246; background: transparent; color: #EEEBE4; border-radius: 0; font: inherit; text-align: left; cursor: pointer">
+            <span style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.14em">02</span>
+            <span style="font-family: 'Shippori Mincho B1', serif; font-size: 24px; font-weight: 800">整える</span>
+            <span style="font-size: 13px">整地・造成</span>
+          </button>
+          <button type="button" class="as-tab" data-step="2" aria-pressed="false" style="flex: 1 1 200px; display: flex; align-items: baseline; gap: 14px; min-height: 64px; padding: 14px 20px; border: 1px solid #3E4246; background: transparent; color: #EEEBE4; border-radius: 0; font: inherit; text-align: left; cursor: pointer">
+            <span style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.14em">03</span>
+            <span style="font-family: 'Shippori Mincho B1', serif; font-size: 24px; font-weight: 800">固める</span>
+            <span style="font-size: 13px">アスファルト・生コン</span>
+          </button>
+          <button type="button" class="as-tab" data-step="3" aria-pressed="false" style="flex: 1 1 200px; display: flex; align-items: baseline; gap: 14px; min-height: 64px; padding: 14px 20px; border: 1px solid #3E4246; background: transparent; color: #EEEBE4; border-radius: 0; font: inherit; text-align: left; cursor: pointer">
+            <span style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.14em">04</span>
+            <span style="font-family: 'Shippori Mincho B1', serif; font-size: 24px; font-weight: 800">彩る</span>
+            <span style="font-size: 13px">庭・カーポート</span>
+          </button>
+      </div>
+
+      <div style="position: relative; background: #1F2226; border: 1px solid #3E4246; overflow: hidden">
+        <svg role="img" id="sim-svg" aria-label="断面図：古い建物を解体する段階" viewBox="0 0 1000 440" style="display: block; width: 100%; height: auto">
+          <rect x="0" y="0" width="1000" height="300" fill="#22262C"></rect>
+          <circle cx="880" cy="80" r="34" fill="#0477B8" id="sim-sun" style="opacity: .25; transition: opacity 1s"></circle>
+          <rect x="0" y="300" width="1000" height="140" fill="#5A4330"></rect>
+          <path d="M0 330H1000M0 370H1000M0 410H1000" stroke="#664D38" stroke-width="2" stroke-dasharray="10 14"></path>
+          <g id="sim-house" style="opacity: 1; transform: translateY(0px); transition: opacity .9s ease, transform 1s cubic-bezier(.2,.8,.2,1)">
+            <path d="M560 300V190H860V300" fill="none" stroke="#C9CCD0" stroke-width="3"></path>
+            <path d="M540 196L710 110L880 196" fill="none" stroke="#C9CCD0" stroke-width="3"></path>
+            <rect x="600" y="220" width="56" height="44" fill="none" stroke="#C9CCD0" stroke-width="2"></rect>
+            <rect x="760" y="230" width="44" height="70" fill="none" stroke="#C9CCD0" stroke-width="2"></rect>
+            <path d="M120 300V240H420V300" fill="none" stroke="#8A8D91" stroke-width="3" stroke-dasharray="6 6"></path>
+          </g>
+          <g id="sim-rubble" style="opacity: 1; transition: opacity .8s ease">
+            <path d="M0 300L60 288L110 296L180 282L250 298L330 286L400 300L470 290L540 300Z" fill="#6E5238"></path>
+            <circle cx="300" cy="292" r="7" fill="#8A6A4A"></circle><circle cx="440" cy="294" r="5" fill="#8A6A4A"></circle><circle cx="90" cy="292" r="6" fill="#8A6A4A"></circle>
+          </g>
+          <g id="sim-sand" style="opacity: 0; transform: translateY(-40px); transition: opacity .8s ease, transform .9s cubic-bezier(.2,.8,.2,1)">
+            <rect x="0" y="282" width="1000" height="18" fill="#C9B48F"></rect>
+            <path d="M0 282H1000" stroke="#E7D7B5" stroke-width="2"></path>
+          </g>
+          <g id="sim-pave" style="opacity: 0; transform: translateY(-40px); transition: opacity .8s ease, transform .9s cubic-bezier(.2,.8,.2,1)">
+            <rect x="0" y="270" width="500" height="12" fill="#3A3D41"></rect>
+            <path d="M40 276H460" stroke="#EEEBE4" stroke-width="2" stroke-dasharray="24 18"></path>
+            <rect x="520" y="270" width="480" height="12" fill="#A9A49A"></rect>
+          </g>
+          <g id="sim-garden" style="opacity: 0; transform: translateY(30px); transition: opacity .9s ease, transform 1s cubic-bezier(.2,.8,.2,1)">
+            <path d="M80 140L440 124V134L80 150Z" fill="#28A7E0"></path>
+            <path d="M100 148V270M420 132V270" stroke="#EEEBE4" stroke-width="4"></path>
+            <path d="M180 270c0-18 12-28 28-28h18l18-22h60l22 22h12c12 0 20 10 20 22v6H180z" fill="none" stroke="#EEEBE4" stroke-width="3"></path>
+            <rect x="520" y="262" width="480" height="8" fill="#2F6B4F"></rect>
+            <path d="M840 262V180" stroke="#EEEBE4" stroke-width="4"></path>
+            <circle cx="840" cy="160" r="46" fill="#2F6B4F"></circle>
+            <circle cx="680" cy="250" r="16" fill="#4E8A6C"></circle><circle cx="710" cy="254" r="12" fill="#4E8A6C"></circle><circle cx="960" cy="250" r="14" fill="#4E8A6C"></circle>
+            <path d="M560 262V226M600 262V226M640 262V226M560 236H640" stroke="#C9CCD0" stroke-width="3"></path>
+          </g>
+          <path d="M0 270H1000" stroke="#28A7E0" stroke-width="1" stroke-dasharray="4 6"></path>
+          <text x="16" y="262" font-family="'Space Grotesk', Arial, sans-serif" font-size="13" letter-spacing="2" fill="#A3A7AC">GL ±0</text>
+        </svg>
+        <div id="sim-prog" style="position: absolute; left: 0; bottom: 0; height: 4px; width: 25%; background: #28A7E0; transition: width .9s cubic-bezier(.2,.8,.2,1)"></div>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 32px">
+        <p style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-size: clamp(40px, 5vw, 72px); font-weight: 800; line-height: 1" id="sim-v">解く</p>
+        <p style="margin: 0; flex: 1 1 360px; min-width: 0; color: #C9CCD0" id="sim-d" aria-live="polite">古い建物やブロック塀を解体。分別して搬出し、土地をまっさらに戻します。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORKS : horizontal ===== -->
+  <section id="works" style="padding: clamp(88px, 10vw, 150px) 0">
+    <div style="padding: 0 clamp(20px, 4vw, 56px)">
+      <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+        <h2 class="as-rv" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(56px, 9vw, 140px); line-height: 0.86; letter-spacing: -0.05em">Works</h2>
+        <p class="as-rv" style="margin: 0; display: flex; align-items: center; gap: 12px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.22em">施工事例 <span class="as-float" style="display: inline-block">← SWIPE →</span></p>
+      </div>
+      <div class="as-grow" style="max-width: 1240px; margin: 28px auto 0; height: 2px; background: #16181A"></div>
+    </div>
+    <div tabindex="0" aria-label="施工事例（横にスクロール）" style="display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 48px clamp(20px, 4vw, 56px) 12px; scrollbar-width: thin">
+      <figure class="as-wk" style="flex: 0 0 clamp(260px, 34vw, 480px); margin: 0; scroll-snap-align: start; position: relative">
+        <div style="aspect-ratio: 4 / 5; background: #4E8A6C"></div>
+        <figcaption class="as-wk-ov" style="position: absolute; inset: auto 0 0 0; padding: 20px; background: rgba(22,24,26,.82); color: #EEEBE4; font-size: 14px">[施工地域]　新築外構一式</figcaption>
+        <p style="margin: 12px 0 0; display: flex; justify-content: space-between; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.18em"><span>01 / GARDEN</span><span>PHOTO</span></p>
+      </figure>
+      <figure class="as-wk" style="flex: 0 0 clamp(240px, 26vw, 360px); margin: 0; scroll-snap-align: start; position: relative; padding-top: 80px">
+        <div style="aspect-ratio: 3 / 4; background: #C4E1F2"></div>
+        <figcaption class="as-wk-ov" style="position: absolute; inset: auto 0 34px 0; padding: 20px; background: rgba(22,24,26,.82); color: #EEEBE4; font-size: 14px">[施工地域]　カーポート設置</figcaption>
+        <p style="margin: 12px 0 0; display: flex; justify-content: space-between; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.18em"><span>02 / CARPORT</span><span>PHOTO</span></p>
+      </figure>
+      <figure class="as-wk" style="flex: 0 0 clamp(280px, 40vw, 560px); margin: 0; scroll-snap-align: start; position: relative">
+        <div style="aspect-ratio: 16 / 11; background: #3A3D41"></div>
+        <figcaption class="as-wk-ov" style="position: absolute; inset: auto 0 34px 0; padding: 20px; background: rgba(22,24,26,.82); color: #EEEBE4; font-size: 14px">[施工地域]　駐車場アスファルト舗装</figcaption>
+        <p style="margin: 12px 0 0; display: flex; justify-content: space-between; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.18em"><span>03 / ASPHALT</span><span>PHOTO</span></p>
+      </figure>
+      <figure class="as-wk" style="flex: 0 0 clamp(240px, 26vw, 360px); margin: 0; scroll-snap-align: start; position: relative; padding-top: 120px">
+        <div style="aspect-ratio: 3 / 4; background: #A9A49A"></div>
+        <figcaption class="as-wk-ov" style="position: absolute; inset: auto 0 34px 0; padding: 20px; background: rgba(22,24,26,.82); color: #EEEBE4; font-size: 14px">[施工地域]　土間コンクリート</figcaption>
+        <p style="margin: 12px 0 0; display: flex; justify-content: space-between; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.18em"><span>04 / CONCRETE</span><span>PHOTO</span></p>
+      </figure>
+      <figure class="as-wk" style="flex: 0 0 clamp(260px, 34vw, 480px); margin: 0; scroll-snap-align: start; position: relative">
+        <div style="aspect-ratio: 4 / 5; background: #735A43"></div>
+        <figcaption class="as-wk-ov" style="position: absolute; inset: auto 0 34px 0; padding: 20px; background: rgba(22,24,26,.82); color: #EEEBE4; font-size: 14px">[施工地域]　木造家屋解体</figcaption>
+        <p style="margin: 12px 0 0; display: flex; justify-content: space-between; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.18em"><span>05 / DEMOLITION</span><span>PHOTO</span></p>
+      </figure>
+      <figure class="as-wk" style="flex: 0 0 clamp(240px, 26vw, 360px); margin: 0 clamp(20px, 4vw, 56px) 0 0; scroll-snap-align: start; position: relative; padding-top: 60px">
+        <div style="aspect-ratio: 3 / 4; background: #C9B48F"></div>
+        <figcaption class="as-wk-ov" style="position: absolute; inset: auto 0 34px 0; padding: 20px; background: rgba(22,24,26,.82); color: #EEEBE4; font-size: 14px">[施工地域]　整地・造成</figcaption>
+        <p style="margin: 12px 0 0; display: flex; justify-content: space-between; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.18em"><span>06 / GROUND</span><span>PHOTO</span></p>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== FLOW ===== -->
+  <section id="flow" style="background: #E3DED4; padding: clamp(88px, 10vw, 150px) clamp(20px, 4vw, 56px)">
+    <div style="max-width: 1240px; margin: 0 auto">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+        <h2 class="as-rv" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(56px, 9vw, 140px); line-height: 0.86; letter-spacing: -0.05em">Flow</h2>
+        <p class="as-rv" style="margin: 0; font-size: 14px; letter-spacing: 0.14em">ご依頼の流れ</p>
+      </div>
+      <div style="position: relative; margin-top: 56px">
+        <div class="as-grow" style="position: absolute; left: 0; right: 0; top: 11px; height: 2px; background: #0477B8"></div>
+        <ol style="position: relative; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 32px 20px">
+          <li class="as-rv" style="display: flex; flex-direction: column; gap: 10px"><span style="width: 24px; height: 24px; border-radius: 50%; background: #E3DED4; border: 2px solid #0477B8; box-sizing: border-box"></span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.2em; color: #0477B8">01</span><span style="font-weight: 700; font-size: 18px">お問い合わせ</span><span style="font-size: 14px; color: #3E4246">お電話・フォームからお気軽に。</span></li>
+          <li class="as-rv" style="display: flex; flex-direction: column; gap: 10px"><span style="width: 24px; height: 24px; border-radius: 50%; background: #E3DED4; border: 2px solid #0477B8; box-sizing: border-box"></span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.2em; color: #0477B8">02</span><span style="font-weight: 700; font-size: 18px">現地調査</span><span style="font-size: 14px; color: #3E4246">敷地を拝見し、ご要望を伺います。</span></li>
+          <li class="as-rv" style="display: flex; flex-direction: column; gap: 10px"><span style="width: 24px; height: 24px; border-radius: 50%; background: #E3DED4; border: 2px solid #0477B8; box-sizing: border-box"></span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.2em; color: #0477B8">03</span><span style="font-weight: 700; font-size: 18px">プラン・お見積り</span><span style="font-size: 14px; color: #3E4246">内容と費用を分かりやすくご提案。</span></li>
+          <li class="as-rv" style="display: flex; flex-direction: column; gap: 10px"><span style="width: 24px; height: 24px; border-radius: 50%; background: #E3DED4; border: 2px solid #0477B8; box-sizing: border-box"></span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.2em; color: #0477B8">04</span><span style="font-weight: 700; font-size: 18px">ご契約</span><span style="font-size: 14px; color: #3E4246">ご納得いただいてから着工日を決定。</span></li>
+          <li class="as-rv" style="display: flex; flex-direction: column; gap: 10px"><span style="width: 24px; height: 24px; border-radius: 50%; background: #E3DED4; border: 2px solid #0477B8; box-sizing: border-box"></span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.2em; color: #0477B8">05</span><span style="font-weight: 700; font-size: 18px">施工</span><span style="font-size: 14px; color: #3E4246">近隣への配慮を徹底して工事。</span></li>
+          <li class="as-rv" style="display: flex; flex-direction: column; gap: 10px"><span style="width: 24px; height: 24px; border-radius: 50%; background: #0477B8"></span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; letter-spacing: 0.2em; color: #0477B8">06</span><span style="font-weight: 700; font-size: 18px">お引き渡し</span><span style="font-size: 14px; color: #3E4246">完成後もお気軽にご相談ください。</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPANY ===== -->
+  <section id="company" style="padding: clamp(88px, 10vw, 150px) clamp(20px, 4vw, 56px)">
+    <div style="max-width: 1240px; margin: 0 auto">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+        <h2 class="as-rv" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(56px, 9vw, 140px); line-height: 0.86; letter-spacing: -0.05em">Company</h2>
+        <p class="as-rv" style="margin: 0; font-size: 14px; letter-spacing: 0.14em">会社概要</p>
+      </div>
+      <div class="as-grow" style="margin: 28px 0 clamp(40px, 5vw, 64px); height: 2px; background: #16181A"></div>
+      <div style="display: flex; flex-wrap: wrap; gap: 40px clamp(40px, 6vw, 88px)">
+        <dl class="as-rv" style="flex: 1 1 460px; min-width: 0; margin: 0; display: grid; grid-template-columns: minmax(96px, 140px) minmax(0, 1fr); font-size: 15px">
+          <dt style="padding: 20px 0; border-bottom: 1px solid #CFC9BD; color: #5D6166">会社名</dt><dd style="margin: 0; padding: 20px 0; border-bottom: 1px solid #CFC9BD">AsorA株式会社（アソラ）</dd>
+          <dt style="padding: 20px 0; border-bottom: 1px solid #CFC9BD; color: #5D6166">所在地</dt><dd style="margin: 0; padding: 20px 0; border-bottom: 1px solid #CFC9BD">〒832-0815<br>福岡県柳川市三橋町白鳥147番地2</dd>
+          <dt style="padding: 20px 0; border-bottom: 1px solid #CFC9BD; color: #5D6166">代表者</dt><dd style="margin: 0; padding: 20px 0; border-bottom: 1px solid #CFC9BD">代表取締役　[代表者名]</dd>
+          <dt style="padding: 20px 0; border-bottom: 1px solid #CFC9BD; color: #5D6166">設立</dt><dd style="margin: 0; padding: 20px 0; border-bottom: 1px solid #CFC9BD">[設立年月]</dd>
+          <dt style="padding: 20px 0; border-bottom: 1px solid #CFC9BD; color: #5D6166">TEL</dt><dd style="margin: 0; padding: 20px 0; border-bottom: 1px solid #CFC9BD">[電話番号]</dd>
+          <dt style="padding: 20px 0; border-bottom: 1px solid #CFC9BD; color: #5D6166">事業内容</dt><dd style="margin: 0; padding: 20px 0; border-bottom: 1px solid #CFC9BD">外構・エクステリア工事／庭工事／カーポート設置／アスファルト舗装／生コン（土間コンクリート）工事／解体工事</dd>
+          <dt style="padding: 20px 0; border-bottom: 1px solid #CFC9BD; color: #5D6166">対応エリア</dt><dd style="margin: 0; padding: 20px 0; border-bottom: 1px solid #CFC9BD">柳川市を中心に、[対応エリア]</dd>
+        </dl>
+        <div class="as-clip" style="flex: 1 1 400px; min-width: 0; position: relative; min-height: 380px; background: #D7D2C8; overflow: hidden; display: flex; align-items: center; justify-content: center">
+          <svg aria-hidden="true" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%" fill="none" stroke="#B7B0A3" stroke-width="1.4"><path d="M0 80C80 70 140 110 220 96s120-40 180-30"></path><path d="M0 200c60-10 120 30 200 10s140-50 200-40"></path><path d="M120 0v300M280 0c-10 100 10 200 0 300"></path><path d="M0 140h400" stroke-width="6" stroke="#C6BFB2"></path></svg>
+          <div class="as-float" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 10px">
+            <svg aria-hidden="true" viewBox="60 8 475 410" style="width: 54px; height: auto"><path d="M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z" fill="#0483C7"></path><path d="M278.5 263H443L480 327.5H315L266.5 414H192Z" fill="#28A7E0"></path><path d="M417 345.5H490L530.5 414H456Z" fill="#0483C7"></path></svg>
+            <span style="background: #16181A; color: #EEEBE4; padding: 8px 16px; font-size: 13px; letter-spacing: 0.08em">AsorA株式会社</span>
+          </div>
+          <span style="position: absolute; left: 20px; bottom: 16px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.16em">MAP — Googleマップ埋め込み位置</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT : DEEPEST LAYER ===== -->
+  <section id="contact" style="position: relative; overflow: hidden; background: #3B2C20; color: #F3EEE6; padding: clamp(88px, 10vw, 150px) clamp(20px, 4vw, 56px)">
+    <div style="position: relative; max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px clamp(40px, 6vw, 96px)">
+      <div class="as-rv" style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+        <p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.24em; color: #D9CBB8">GL −∞ — CONTACT</p>
+        <h2 style="margin: 0; font-family: 'Shippori Mincho B1', serif; font-weight: 800; font-size: clamp(34px, 4.4vw, 60px); line-height: 1.35">すべての工事は、<br>ひとつの相談から。</h2>
+        <p style="margin: 0; font-size: 15px; color: #E4DACB">外構・舗装・解体のご相談、お見積りのご依頼はお電話またはフォームから承ります。「こんなこと頼めるかな」でも、お気軽にどうぞ。</p>
+        <a class="as-btn" href="tel:" style="display: flex; flex-direction: column; gap: 4px; padding: 24px 0; border-top: 1px solid #F3EEE6; border-bottom: 1px solid #F3EEE6; color: #F3EEE6; text-decoration: none">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.24em">TEL</span>
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(30px, 3.6vw, 46px); font-weight: 700; line-height: 1.2">[電話番号]</span>
+          <span style="font-size: 13px">受付時間　[受付時間]</span>
+        </a>
+      </div>
+      <div class="as-rv" style="flex: 1.2 1 440px; min-width: 0; background: #EEEBE4; color: #16181A; padding: clamp(28px, 4vw, 48px); display: flex; flex-direction: column; gap: 22px">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 22px">
+          <div style="display: flex; flex-direction: column; gap: 8px"><label for="as-name" style="font-size: 14px; font-weight: 700">お名前</label><input id="as-name" type="text" autocomplete="name" style="min-height: 48px; padding: 0 14px; border: 1px solid #8A8D91; background: #FFFFFF; font: inherit; border-radius: 0"></div>
+          <div style="display: flex; flex-direction: column; gap: 8px"><label for="as-tel" style="font-size: 14px; font-weight: 700">電話番号</label><input id="as-tel" type="tel" autocomplete="tel" style="min-height: 48px; padding: 0 14px; border: 1px solid #8A8D91; background: #FFFFFF; font: inherit; border-radius: 0"></div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px"><label for="as-mail" style="font-size: 14px; font-weight: 700">メールアドレス</label><input id="as-mail" type="email" autocomplete="email" style="min-height: 48px; padding: 0 14px; border: 1px solid #8A8D91; background: #FFFFFF; font: inherit; border-radius: 0"></div>
+        <fieldset style="margin: 0; padding: 0; border: 0">
+          <legend style="font-size: 14px; font-weight: 700; padding: 0; margin-bottom: 10px">ご相談内容（複数選択可）</legend>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px">
+            <label style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #8A8D91; background: #FFFFFF; font-size: 14px"><input type="checkbox" style="width: 18px; height: 18px; accent-color: #0477B8">カーポート</label>
+            <label style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #8A8D91; background: #FFFFFF; font-size: 14px"><input type="checkbox" style="width: 18px; height: 18px; accent-color: #0477B8">庭工事</label>
+            <label style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #8A8D91; background: #FFFFFF; font-size: 14px"><input type="checkbox" style="width: 18px; height: 18px; accent-color: #0477B8">アスファルト・生コン</label>
+            <label style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #8A8D91; background: #FFFFFF; font-size: 14px"><input type="checkbox" style="width: 18px; height: 18px; accent-color: #0477B8">解体</label>
+            <label style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #8A8D91; background: #FFFFFF; font-size: 14px"><input type="checkbox" style="width: 18px; height: 18px; accent-color: #0477B8">その他</label>
+          </div>
+        </fieldset>
+        <div style="display: flex; flex-direction: column; gap: 8px"><label for="as-msg" style="font-size: 14px; font-weight: 700">ご相談の詳細</label><textarea id="as-msg" rows="5" style="padding: 12px 14px; border: 1px solid #8A8D91; background: #FFFFFF; font: inherit; border-radius: 0; resize: vertical"></textarea></div>
+        <button class="as-btn" type="button" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 36px; background: #16181A; color: #EEEBE4; border: 0; border-radius: 999px; font: inherit; font-weight: 700; letter-spacing: 0.1em; cursor: pointer">送信する
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="background: #16181A; color: #EEEBE4; padding: clamp(64px, 8vw, 110px) clamp(20px, 4vw, 56px) 28px; overflow: hidden">
+    <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px">
+        <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #C9CCD0">
+          <span style="font-weight: 700; letter-spacing: 0.18em; color: #EEEBE4">AsorA株式会社</span>
+          <span>〒832-0815 福岡県柳川市三橋町白鳥147番地2</span>
+        </div>
+        <nav aria-label="フッターメニュー" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; font-size: 14px">
+          <a class="as-nav" href="#service" style="color: #EEEBE4; text-decoration: none; padding: 10px 0">事業内容</a>
+          <a class="as-nav" href="#works" style="color: #EEEBE4; text-decoration: none; padding: 10px 0">施工事例</a>
+          <a class="as-nav" href="#build" style="color: #EEEBE4; text-decoration: none; padding: 10px 0">一貫施工</a>
+          <a class="as-nav" href="#company" style="color: #EEEBE4; text-decoration: none; padding: 10px 0">会社概要</a>
+          <a class="as-nav" href="#flow" style="color: #EEEBE4; text-decoration: none; padding: 10px 0">ご依頼の流れ</a>
+          <a class="as-nav" href="#contact" style="color: #EEEBE4; text-decoration: none; padding: 10px 0">お問い合わせ</a>
+        </nav>
+      </div>
+      <div class="lg-wrap as-rv" role="img" aria-label="AsorA" style="display: flex; align-items: flex-end; gap: clamp(16px, 3vw, 40px)">
+        <svg aria-hidden="true" viewBox="60 8 475 410" style="width: 28%; height: auto; overflow: visible"><g class="lg-h lg-h1"><path d="M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z" fill="#EEEBE4"></path></g><g class="lg-h lg-h2"><path d="M278.5 263H443L480 327.5H315L266.5 414H192Z" fill="#28A7E0"></path></g><g class="lg-h lg-h3"><path d="M417 345.5H490L530.5 414H456Z" fill="#EEEBE4"></path></g></svg>
+        <svg aria-hidden="true" viewBox="10 442 576 166" style="width: 72%; height: auto; overflow: visible"><g class="lg-h lg-ht"><path fill-rule="evenodd" d="M46.1 584.0 L54.0 566.5 L85.3 566.8 L116.5 567.1 L123.4 583.3 C127.2 592.2 130.9 600.1 131.5 600.8 C132.3 601.7 135.8 602.0 144.3 601.8 L155.9 601.5 L144.9 577.0 C138.9 563.5 131.5 547.1 128.6 540.5 C125.6 533.9 119.3 519.7 114.5 509.0 C100.1 476.8 86.8 447.5 86.6 447.2 C86.4 447.1 80.7 458.8 74.0 473.2 C67.2 487.7 57.6 508.1 52.7 518.5 C47.8 529.0 42.0 541.3 39.8 546.0 C37.6 550.7 34.1 558.1 32.0 562.5 C29.9 566.9 26.3 574.5 24.0 579.5 C18.3 591.7 14.0 601.1 14.0 601.6 C14.0 601.9 19.4 601.9 26.1 601.8 L38.2 601.5 L46.1 584.0 Z M64.0 544.4 C64.0 542.5 85.4 497.1 86.0 497.7 C86.6 498.4 100.8 530.2 105.7 541.8 L107.0 545.0 L85.5 545.0 C73.7 545.0 64.0 544.7 64.0 544.4 Z M216.5 601.5 C227.8 596.5 234.0 587.7 234.8 575.2 C235.7 561.0 231.2 555.3 210.2 544.7 C196.0 537.4 193.3 535.0 194.9 530.7 C197.4 524.1 207.4 524.4 213.9 531.3 L216.2 533.9 L224.1 528.7 C228.4 525.8 232.0 523.1 232.0 522.5 C232.0 522.0 229.3 519.0 226.1 515.9 C221.5 511.3 218.9 509.7 214.4 508.4 C206.6 506.2 196.0 506.9 189.6 510.1 C177.9 515.9 171.6 529.8 175.1 542.3 C176.9 549.0 182.2 553.6 195.6 560.0 C203.3 563.7 208.7 567.0 210.4 569.0 C215.6 575.2 212.5 583.4 204.5 584.9 C197.2 586.2 191.8 583.3 188.5 576.4 L187.0 573.1 L178.7 577.1 C174.2 579.2 170.4 581.7 170.2 582.4 C169.4 586.2 178.7 597.8 185.3 601.2 C193.3 605.2 207.8 605.4 216.5 601.5 Z M320.2 602.0 C339.2 596.2 352.0 579.9 353.6 559.7 C354.7 545.6 349.7 531.0 340.5 521.6 C321.5 502.4 288.0 502.1 269.0 521.0 C246.3 543.6 252.3 584.5 280.4 598.7 C288.5 602.8 292.9 603.8 303.6 603.9 C311.2 604.0 315.5 603.5 320.2 602.0 Z M294.5 583.4 C288.4 581.3 283.5 576.6 280.3 570.2 C278.0 565.4 277.5 563.2 277.5 556.5 C277.5 545.6 279.8 539.4 285.9 533.7 C291.3 528.6 295.7 526.9 303.7 526.7 C311.7 526.5 316.9 528.3 322.2 533.0 C328.4 538.4 331.3 545.3 331.4 555.0 C331.5 565.0 329.0 572.0 323.5 577.6 C316.6 584.4 304.3 586.9 294.5 583.4 Z M403.2 572.2 C403.5 543.4 403.6 542.4 405.8 537.8 C409.1 531.2 413.0 528.7 420.6 528.2 C425.0 527.9 427.6 528.3 429.9 529.5 C431.7 530.4 433.3 531.0 433.4 530.8 C435.2 528.0 441.8 511.5 441.4 510.9 C440.4 509.3 430.6 507.0 424.6 507.0 C417.5 507.0 411.1 509.6 406.2 514.3 L403.0 517.4 L403.0 513.2 L403.0 509.0 L392.5 509.0 L382.0 509.0 L381.8 555.1 C381.6 580.4 381.7 601.4 381.9 601.6 C382.1 601.8 387.0 602.0 392.6 602.0 L402.9 602.0 L403.2 572.2 Z M471.7 584.2 L479.8 566.5 L510.0 566.2 C528.7 566.1 540.7 566.3 541.4 567.0 C542.1 567.5 545.9 575.6 550.0 585.0 L557.3 602.0 L569.2 602.0 C575.7 602.0 581.0 601.6 581.0 601.1 C581.0 600.6 576.0 589.0 569.9 575.3 C563.8 561.7 550.9 533.0 541.3 511.5 C531.7 490.1 521.3 466.8 518.2 459.7 C515.2 452.7 512.3 447.3 512.0 447.7 C511.6 448.2 504.8 462.2 497.0 479.0 C489.1 495.8 480.7 513.8 478.3 519.0 C475.8 524.2 470.3 535.9 466.0 545.0 C449.0 580.9 440.0 600.4 440.0 601.2 C440.0 601.6 445.3 602.0 451.8 602.0 L463.6 602.0 L471.7 584.2 Z M489.9 543.2 C490.4 542.3 495.1 531.8 500.5 520.0 C505.8 508.2 510.5 498.2 510.9 497.7 C511.3 497.3 516.4 507.8 522.2 521.0 L532.8 545.0 L510.8 545.0 C490.3 545.0 489.0 544.9 489.9 543.2 Z" fill="#EEEBE4"></path></g></svg>
+      </div>
+      <p style="margin: 0; padding-top: 22px; border-top: 1px solid #3E4246; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.14em; color: #A3A7AC"><span>© AsorA Co., Ltd.</span><span>GROUND TO SKY — YANAGAWA, FUKUOKA</span></p>
+    </div>
+  </footer>
+
+</div>
+<script>
+(function(){
+  var data=[
+    {v:'解く',d:'古い建物やブロック塀を解体。分別して搬出し、土地をまっさらに戻します。',alt:'断面図：古い建物を解体する段階'},
+    {v:'整える',d:'地面の高さと勾配を整え、締め固めて、次の工程のための平らな地盤をつくります。',alt:'断面図：整地した平らな地盤'},
+    {v:'固める',d:'駐車場や通路を、アスファルト舗装や土間コンクリートで丈夫に仕上げます。',alt:'断面図：舗装と土間コンクリートの層'},
+    {v:'彩る',d:'植栽、門まわり、カーポート。暮らしの風景を仕上げて、お引き渡しです。',alt:'断面図：庭とカーポートが完成した状態'}
+  ];
+  var $=function(id){return document.getElementById(id)};
+  var tabs=[].slice.call(document.querySelectorAll('.as-tab'));
+  if(!tabs.length)return;
+  var step=0,manual=false;
+  function set(el,op,y){if(!el)return;el.style.opacity=op;if(y!==undefined)el.style.transform='translateY('+y+'px)';}
+  function render(s){
+    step=s;
+    tabs.forEach(function(b,i){var on=i===s;b.setAttribute('aria-pressed',on?'true':'false');b.style.background=on?'#0477B8':'transparent';b.style.color=on?'#FFFFFF':'#EEEBE4';b.style.borderColor=on?'#0477B8':'#3E4246';});
+    set($('sim-house'),s===0?1:0,s===0?0:60);
+    set($('sim-rubble'),s===0?1:0);
+    set($('sim-sand'),s>=1?1:0,s>=1?0:-40);
+    set($('sim-pave'),s>=2?1:0,s>=2?0:-40);
+    set($('sim-garden'),s>=3?1:0,s>=3?0:30);
+    set($('sim-sun'),s>=3?1:0.25);
+    $('sim-prog').style.width=((s+1)*25)+'%';
+    $('sim-v').textContent=data[s].v;
+    $('sim-d').textContent=data[s].d;
+    $('sim-svg').setAttribute('aria-label',data[s].alt);
+  }
+  tabs.forEach(function(b){b.addEventListener('click',function(){manual=true;render(+b.getAttribute('data-step'));});});
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce){setInterval(function(){if(!manual&&!document.hidden)render((step+1)%4);},3200);}
+})();
+</script>
+</body>
+</html>
