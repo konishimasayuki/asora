@@ -111,8 +111,34 @@ a{color:inherit}img{display:block;max-width:100%}
 a:focus-visible{outline:3px solid var(--sky);outline-offset:-3px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js [data-rv]{opacity:1;transform:none}}
 </style>
+<script>if('scrollRestoration' in history)history.scrollRestoration='manual';window.scrollTo(0,0);</script>
 </head>
 <body>
+<style>#ldr{position:fixed;inset:0;z-index:2147483600;display:flex;align-items:center;justify-content:center;overflow:hidden;--p:0}
+html.is-loading{overflow:hidden}
+html.is-loading body *:not(#ldr):not(#ldr *){animation-play-state:paused!important}
+#ldr .ldr-n{font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){#ldr,#ldr *{animation:none!important;transition:opacity .3s!important}#ldr.out{opacity:0}}#ldr{background:#E8E8E4;color:#111214;flex-direction:column;transition:clip-path 1s cubic-bezier(.77,0,.18,1);clip-path:inset(0 0 0 0)}
+#ldr.out{clip-path:inset(0 0 0 100%)}
+#ldr .g{position:absolute;inset:0;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(8,1fr)}
+#ldr .g i{border-right:1px solid rgba(17,18,20,.12);border-bottom:1px solid rgba(17,18,20,.12);background:#0477B8;transform:scaleY(0);transform-origin:bottom;animation:ld .5s cubic-bezier(.7,0,.2,1) both}
+@keyframes ld{to{transform:scaleY(1)}}
+#ldr .c{position:relative;background:#E8E8E4;border:1px solid #111214;padding:24px 28px;display:flex;flex-direction:column;gap:12px;min-width:min(420px,80vw)}
+#ldr .t{font:900 clamp(36px,6vw,64px)/1 "Zen Kaku Gothic New",sans-serif}
+#ldr .m{display:flex;justify-content:space-between;font:500 12px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.08em}
+#ldr .ldr-n::after{content:" %"}
+#ldr .tr{height:6px;background:rgba(17,18,20,.12)}#ldr .ldr-fill{display:block;height:100%;background:#111214;transform-origin:left;transform:scaleX(0)}</style>
+<div id="ldr" aria-hidden="true"><div class="g"><i style="animation-delay:0.000s"></i><i style="animation-delay:0.592s"></i><i style="animation-delay:1.184s"></i><i style="animation-delay:0.240s"></i><i style="animation-delay:0.832s"></i><i style="animation-delay:1.424s"></i><i style="animation-delay:0.480s"></i><i style="animation-delay:1.072s"></i><i style="animation-delay:0.128s"></i><i style="animation-delay:0.720s"></i><i style="animation-delay:1.312s"></i><i style="animation-delay:0.368s"></i><i style="animation-delay:0.960s"></i><i style="animation-delay:0.016s"></i><i style="animation-delay:0.608s"></i><i style="animation-delay:1.200s"></i><i style="animation-delay:0.256s"></i><i style="animation-delay:0.848s"></i><i style="animation-delay:1.440s"></i><i style="animation-delay:0.496s"></i><i style="animation-delay:1.088s"></i><i style="animation-delay:0.144s"></i><i style="animation-delay:0.736s"></i><i style="animation-delay:1.328s"></i><i style="animation-delay:0.384s"></i><i style="animation-delay:0.976s"></i><i style="animation-delay:0.032s"></i><i style="animation-delay:0.624s"></i><i style="animation-delay:1.216s"></i><i style="animation-delay:0.272s"></i><i style="animation-delay:0.864s"></i><i style="animation-delay:1.456s"></i><i style="animation-delay:0.512s"></i><i style="animation-delay:1.104s"></i><i style="animation-delay:0.160s"></i><i style="animation-delay:0.752s"></i><i style="animation-delay:1.344s"></i><i style="animation-delay:0.400s"></i><i style="animation-delay:0.992s"></i><i style="animation-delay:0.048s"></i><i style="animation-delay:0.640s"></i><i style="animation-delay:1.232s"></i><i style="animation-delay:0.288s"></i><i style="animation-delay:0.880s"></i><i style="animation-delay:1.472s"></i><i style="animation-delay:0.528s"></i><i style="animation-delay:1.120s"></i><i style="animation-delay:0.176s"></i><i style="animation-delay:0.768s"></i><i style="animation-delay:1.360s"></i><i style="animation-delay:0.416s"></i><i style="animation-delay:1.008s"></i><i style="animation-delay:0.064s"></i><i style="animation-delay:0.656s"></i><i style="animation-delay:1.248s"></i><i style="animation-delay:0.304s"></i><i style="animation-delay:0.896s"></i><i style="animation-delay:1.488s"></i><i style="animation-delay:0.544s"></i><i style="animation-delay:1.136s"></i><i style="animation-delay:0.192s"></i><i style="animation-delay:0.784s"></i><i style="animation-delay:1.376s"></i><i style="animation-delay:0.432s"></i><i style="animation-delay:1.024s"></i><i style="animation-delay:0.080s"></i><i style="animation-delay:0.672s"></i><i style="animation-delay:1.264s"></i><i style="animation-delay:0.320s"></i><i style="animation-delay:0.912s"></i><i style="animation-delay:1.504s"></i><i style="animation-delay:0.560s"></i><i style="animation-delay:1.152s"></i><i style="animation-delay:0.208s"></i><i style="animation-delay:0.800s"></i><i style="animation-delay:1.392s"></i><i style="animation-delay:0.448s"></i><i style="animation-delay:1.040s"></i><i style="animation-delay:0.096s"></i><i style="animation-delay:0.688s"></i><i style="animation-delay:1.280s"></i><i style="animation-delay:0.336s"></i><i style="animation-delay:0.928s"></i><i style="animation-delay:1.520s"></i><i style="animation-delay:0.576s"></i><i style="animation-delay:1.168s"></i><i style="animation-delay:0.224s"></i><i style="animation-delay:0.816s"></i><i style="animation-delay:1.408s"></i><i style="animation-delay:0.464s"></i><i style="animation-delay:1.056s"></i><i style="animation-delay:0.112s"></i><i style="animation-delay:0.704s"></i><i style="animation-delay:1.296s"></i><i style="animation-delay:0.352s"></i><i style="animation-delay:0.944s"></i></div><div class="c"><span class="t">外構。造成。<br>解体。伐採。</span><div class="m"><span>LOADING / ASORA CO., LTD.</span><span class="ldr-n">0</span></div><div class="tr"><span class="ldr-fill"></span></div></div></div>
+<script>
+(function(){var d=document.documentElement,l=document.getElementById('ldr');if(!l)return;var n=l.querySelector('.ldr-n'),f=l.querySelector('.ldr-fill'),t0=Date.now(),p=0,done=false,MIN=1500;
+d.classList.add('is-loading');
+var tm=setInterval(function(){var cap=done?100:90;p+=Math.max(.5,(cap-p)*.07);if(p>cap)p=cap;if(n)n.textContent=Math.floor(p);if(f)f.style.transform='scaleX('+(p/100)+')';l.style.setProperty('--p',(p/100).toFixed(3));if(p>=100){clearInterval(tm);setTimeout(fin,220)}},30);
+function ready(){setTimeout(function(){done=true},Math.max(0,MIN-(Date.now()-t0)))}
+function fin(){l.classList.add('out');d.classList.remove('is-loading');setTimeout(function(){if(l.parentNode)l.parentNode.removeChild(l)},1400)}
+if(document.readyState==='complete')ready();else window.addEventListener('load',ready);setTimeout(function(){done=true},5000);
+})();
+</script>
+
 <div class="grid-bg" aria-hidden="true"></div>
 <div class="frame">
 <header class="hd">

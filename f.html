@@ -103,8 +103,34 @@ a{color:inherit}img{display:block;max-width:100%}
 a:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js [data-rv]{opacity:1;transform:none}}
 </style>
+<script>if('scrollRestoration' in history)history.scrollRestoration='manual';window.scrollTo(0,0);</script>
 </head>
 <body>
+<style>#ldr{position:fixed;inset:0;z-index:2147483600;display:flex;align-items:center;justify-content:center;overflow:hidden;--p:0}
+html.is-loading{overflow:hidden}
+html.is-loading body *:not(#ldr):not(#ldr *){animation-play-state:paused!important}
+#ldr .ldr-n{font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){#ldr,#ldr *{animation:none!important;transition:opacity .3s!important}#ldr.out{opacity:0}}#ldr{background:#EEF1F5;color:#0F1720;transition:opacity .8s,transform 1s cubic-bezier(.77,0,.18,1)}
+#ldr.out{opacity:0;transform:scale(1.06)}
+#ldr .g{display:grid;grid-template-columns:repeat(3,min(22vw,120px));grid-template-rows:repeat(3,min(22vw,120px));gap:12px}
+#ldr .g i{border-radius:22px;background:#fff;box-shadow:0 6px 20px rgba(15,23,32,.08);animation:lp .6s cubic-bezier(.2,1.3,.3,1) both}
+#ldr .g i:nth-child(2n){background:#28A7E0}#ldr .g i:nth-child(3n){background:#DDE8F1}
+#ldr .g .ctr{background:#0B2A3D!important;display:grid;place-items:center}
+#ldr .g .ctr svg{width:56%}
+@keyframes lp{from{transform:scale(0) rotate(-12deg);opacity:0}}
+#ldr .m{position:absolute;bottom:12vh;font:800 13px/1 "Plus Jakarta Sans",Arial,sans-serif;letter-spacing:.3em}
+#ldr .ldr-n::after{content:"%"}</style>
+<div id="ldr" aria-hidden="true"><div class="g"><i style="animation-delay:0.08s"></i><i style="animation-delay:0.16s"></i><i style="animation-delay:0.24s"></i><i style="animation-delay:0.48s"></i><i class="ctr" style="animation-delay:.05s"><svg class="x" viewBox="60 8 475 410" aria-hidden="true"><path class="p1" d="M297.5 12L431.5 243.5H357L297 139.5L139 414H65Z" fill="#EAF3F9"/><path class="p2" d="M278.5 263H443L480 327.5H315L266.5 414H192Z" fill="#28A7E0"/><path class="p3" d="M417 345.5H490L530.5 414H456Z" fill="#EAF3F9"/></svg></i><i style="animation-delay:0.32s"></i><i style="animation-delay:0.56s"></i><i style="animation-delay:0.64s"></i><i style="animation-delay:0.72s"></i></div><div class="m">LOADING <span class="ldr-n">0</span></div></div>
+<script>
+(function(){var d=document.documentElement,l=document.getElementById('ldr');if(!l)return;var n=l.querySelector('.ldr-n'),f=l.querySelector('.ldr-fill'),t0=Date.now(),p=0,done=false,MIN=1500;
+d.classList.add('is-loading');
+var tm=setInterval(function(){var cap=done?100:90;p+=Math.max(.5,(cap-p)*.07);if(p>cap)p=cap;if(n)n.textContent=Math.floor(p);if(f)f.style.transform='scaleX('+(p/100)+')';l.style.setProperty('--p',(p/100).toFixed(3));if(p>=100){clearInterval(tm);setTimeout(fin,220)}},30);
+function ready(){setTimeout(function(){done=true},Math.max(0,MIN-(Date.now()-t0)))}
+function fin(){l.classList.add('out');d.classList.remove('is-loading');setTimeout(function(){if(l.parentNode)l.parentNode.removeChild(l)},1400)}
+if(document.readyState==='complete')ready();else window.addEventListener('load',ready);setTimeout(function(){done=true},5000);
+})();
+</script>
+
 <div class="layout">
   <aside class="side">
     <div>
